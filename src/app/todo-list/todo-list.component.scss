@@ -1,0 +1,113 @@
+*{
+  font-size: 1.5vw;
+  font-family: 'Open Sans', sans-serif;
+  color:#838383;
+}
+img{
+  height:1.8vw;
+  width:1.8vw;
+}
+
+.ghost {
+  opacity: .5;
+  background: #C8EBFB;
+}
+
+body{
+  background: #C2C2C2;
+}
+
+.wrapper{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+
+
+}
+.inputrow{
+  width:50vw;
+  justify-content: space-between;
+}
+.title{
+  font-size: 5vh;
+  color:#5E5E5E;
+
+}
+
+.input{
+  font-size: 3vh;
+  height: 6vh;
+  border-radius: 5px;
+  padding-left:5px;
+  width: 40vw;
+  margin-bottom: 10px;
+}
+
+.createbutton{
+  width:9vw;
+  font-size: 2vw;
+  height:7vh;
+}
+
+.input:focus{
+  outline: none;
+  border: 2px solid #838383;
+}
+
+.task{
+
+  width: 50vw;
+  padding:20px 5px;
+  border-bottom: 1px solid #C2C2C2;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.taskrow{
+  display: flex;
+  flex-direction: row;
+  width:40%;
+  justify-content:left;
+  height:1vh;
+}
+.tasktext{
+  margin-left: 3vw;
+
+}
+.delete{
+  margin-right: 1vw;
+  text-decoration: none !important;
+}
+.delete:hover{
+  color:#D54894;
+  cursor: pointer;
+}
+.check{
+
+  display:none;
+  position:relative;
+  top:0.5vh;
+  left:0.5vh;
+}
+.done{
+  display:inline !important;
+}
+.donediv{
+  display:block;
+  height:1.8vw;
+  width:1.8vw;
+}
+
+.checked{
+  text-decoration: line-through;
+  background-color:#BEEBBE;
+
+}
+
+
