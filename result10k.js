@@ -1,5 +1,5 @@
 //Remote Memory Exposure
-function (n) {
+function name30(n) {
   if (n === '.') return 1
   return Buffer.byteLength(n) + 2
 }
@@ -28,9 +28,12 @@ function trailingSlash () {
       url.pathname = url.pathname.slice(0, -1)
     }
 
-    res.statusCode = status
-    res.setHeader('Location', u.format(url))
-    res.end()
+    res.statusCode = status;
+    res.setHeader('Location', u.format(url));
+    const emailExpression = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/
+
+  return emailExpression.test(string)
+    res.end();
   }
 
 //Cross-site Scripting (XSS)
@@ -49,12 +52,12 @@ svg => {
 svg => svg.replace(/\[?(?:\s*<![A-Z]+[^>]*>\s*)*\]?/g, '')
 
 //Prototype Pollution
-function(name) {
+function name1 (name) {
     return [this.aliasable('container.lookup'), '(depths, "', name, '")'];
   }
 
 //Regular Expression Denial of Service (ReDoS)
-function (context, from, to) {
+function name2 (context, from, to) {
       var nodeVersions = jsReleases.filter(function (i) {
         return i.name === 'nodejs'
       }).map(function (i) {
@@ -78,12 +81,12 @@ function (context, from, to) {
     }
 
 //Regular Expression Denial of Service (ReDoS)
-getAnnotationURL(sourceMapString) {
+function getAnnotationURL(sourceMapString) {
     return sourceMapString.match(/\/\*\s*# sourceMappingURL=(.*)\*\//)[1].trim()
   }
 
 //Regular Expression Denial of Service (ReDoS)
-loadAnnotation(css) {
+function loadAnnotation(css) {
     let annotations = css.match(/\/\*\s*# sourceMappingURL=.*\*\//gm)
 
     if (annotations && annotations.length > 0) {
@@ -97,7 +100,7 @@ loadAnnotation(css) {
   }
 
 //Information Exposure
-bind => {
+function name3 (bind) {
     bindContributionProvider(bind, ConnectionContainerModule);
     bindContributionProvider(bind, MessagingService.Contribution);
     bind(MessagingContribution).toDynamicValue(({ container }) => {
@@ -110,7 +113,7 @@ bind => {
 }
 
 //Regular Expression Denial of Service (ReDoS)
-getAnnotationURL(sourceMapString) {
+function getAnnotationURL1(sourceMapString) {
     return sourceMapString
       .match(/\/\*\s*# sourceMappingURL=(.*)\s*\*\//)[1]
       .trim()
@@ -223,7 +226,7 @@ async port => {
 }
 
 //Arbitrary Command Injection
-function (port) {
+function name4 (port) {
   var processId = null
   try {
     processId = exec(`lsof -t -i:${port}`)
@@ -242,7 +245,7 @@ function escapeShellArg(arg) {
 }
 
 //Arbitrary Code Execution
-function escapeShellArg(arg) {
+function escapeShellArg1(arg) {
   return arg.replace(/"/g, `""`);
 }
 
@@ -275,7 +278,7 @@ function decodeMap (buf, offset, length, headerLength) {
   }
 
 //Regular Expression Denial of Service (ReDoS)
-function (string) {
+function name5 (string) {
 	if (!string) {
 		return null;
 	}
@@ -297,7 +300,7 @@ function (string) {
 }
 
 //Regular Expression Denial of Service (ReDoS)
-function (string) {
+function name6 (string) {
 	if (!string) {
 		return null;
 	}
@@ -318,7 +321,7 @@ function (string) {
 }
 
 //Regular Expression Denial of Service (ReDoS)
-function(
+function name7 (
     dataUrl
   ) {
     dataUrl = dataUrl || "";
@@ -367,7 +370,7 @@ function getRedirectUrl(query) {
 }
 
 //Sandbox Bypass
-function(e) {
+function name8 (e) {
     if (e.origin === lockOrigin) {
         if (e.data.blob) remoteRender(e);
         else remoteSetTint(e);
@@ -478,7 +481,7 @@ function getLastOfPath(object, path, Empty) {
   }
 
 //Prototype Pollution
-function getLastOfPath(object, path, Empty) {
+function getLastOfPath1(object, path, Empty) {
   function cleanKey(key) {
     return key && key.indexOf('###') > -1 ? key.replace(/###/g, '.') : key;
   }
@@ -504,7 +507,7 @@ function getLastOfPath(object, path, Empty) {
 }
 
 //Directory Traversal
-function (child) {
+function name9 (child) {
 					if (child.isDirectory) return;
 					var content = child.getData();
 					if (!content) {
@@ -516,7 +519,7 @@ function (child) {
 				}
 
 //Remote Code Execution (RCE)
-function(obj, name, loc) {
+function name10 (obj, name, loc) {
       if (!obj || !(name in obj)) {
         throw new Exception('"' + name + '" not defined in ' + obj, {
           loc: loc
@@ -526,14 +529,14 @@ function(obj, name, loc) {
     }
 
 //Directory Traversal
-constructor(connection, {root, cwd} = {}) {
+function constructor(connection, {root, cwd} = {}) {
     this.connection = connection;
     this.cwd = nodePath.normalize(cwd ? nodePath.join(nodePath.sep, cwd) : nodePath.sep);
     this._root = nodePath.resolve(root || process.cwd());
   }
 
 //Command Injection
-execute(cmd, cmdArgs, workingDir) {
+function execute(cmd, cmdArgs, workingDir) {
     const fullCmd = wrap(util.format("%s %s", cmd, cmdArgs));
     const command = [
       "smbclient",
@@ -563,7 +566,7 @@ execute(cmd, cmdArgs, workingDir) {
   }
 
 //Command Injection
-getAllShares() {
+function getAllShares() {
     const maskCmd = this.maskCmd;
     return new Promise((resolve, reject) => {
       exec("smbtree -U guest -N", {}, function (err, stdout, stderr) {
@@ -655,17 +658,17 @@ function toast (message, type = 'normal') {
 }
 
 //Arbitrary Code Execution
-function (str) {
+function name11 (str) {
         return new(tree.Anonymous)(str instanceof tree.JavaScript ? str.evaluated : str);
     }
 
 //Arbitrary Code Execution
-function (_, exp) {
+function name12 (_, exp) {
             return new(tree.JavaScript)(exp, that.index, true).eval(env).value;
         }
 
 //Open Redirect
-function getRedirectUrl(query) {
+function getRedirectUrl1(query) {
     try {
         const redirect = decodeURIComponent(query.r || '/');
         return url.parse(redirect).pathname;
@@ -675,7 +678,7 @@ function getRedirectUrl(query) {
 }
 
 //Command Injection
-function(type, writer) {
+function name13 (type, writer) {
 
 	var self = this;
 
@@ -720,7 +723,7 @@ function cmdSet(key, val) {
 }
 
 //Command Injection
-async function(destination, { hard = true } = {}) {
+async function name14 (destination, { hard = true } = {}) {
 	if (destination && typeof destination === 'string') {
 		return await exec(`git reset ${JSON.stringify(destination)} ${hard ? '--hard' : ''}`);
 	}
@@ -733,7 +736,7 @@ async function(destination, { hard = true } = {}) {
 }
 
 //Regular Expression Denial of Service (ReDoS)
-function( value, element ) {
+function name15 ( value, element ) {
 
 			// Copyright (c) 2010-2013 Diego Perini, MIT licensed
 			// https://gist.github.com/dperini/729294
@@ -743,7 +746,7 @@ function( value, element ) {
 		}
 
 //Remote Code Execution (RCE)
-function(range) {
+function name16 (range) {
     if (!this.myDevice.connection) return new Promise((_, reject) => reject(new Error('No connection!')));
     if (!range) {
         range = this._getFullRange();
@@ -767,7 +770,7 @@ function(range) {
 }
 
 //Prototype Pollution
-function (key, value) {
+function name17 (key, value) {
    var parsedValue = ('' + value).trim();
 
    this._properties = this._propertyAppender(this._properties, key, parsedValue);
@@ -794,8 +797,8 @@ function (key, value) {
 }
 
 //Denial of Service (DoS)
-constructor(opts = {}) {
-    super();
+function nameconstructor(opts = {}) {
+    // super();
 
     this.clients = {};
     this.clientsCount = 0;
@@ -840,7 +843,7 @@ constructor(opts = {}) {
   }
 
 //Improper Input Validation
-function(string, parts) {
+function name18 (string, parts) {
     // extract username:password
     var firstBackSlash = string.indexOf('\\');
     var firstSlash = string.indexOf('/');
@@ -864,7 +867,7 @@ function(string, parts) {
   }
 
 //Prototype Pollution
-(obj, arrKey, val, isAppend) => {
+function arrowFunc0(obj, arrKey, val, isAppend) {
   const last = arrKey.pop();
   arrKey.forEach((k) => {
     obj[k] = obj[k] || {};
@@ -884,7 +887,7 @@ function(string, parts) {
 }
 
 //Prototype Pollution
-function set  (object, path, val, obj) {
+function set1  (object, path, val, obj) {
   return ((path = path.split ? path.split('.') : path.slice(0)).slice(0, -1).reduce(function (obj, p) {
     return obj[p] = obj[p] || {};
   }, obj = object)[path.pop()] = val), object;
@@ -906,10 +909,12 @@ function deepCopy(sourceObj, destinationObj) {
 }
 
 //Regular Expression Denial of Service (ReDoS)
-() => /(?<=^v?|\sv?)(?:(?:0|[1-9]\d*)\.){2}(?:0|[1-9]\d*)(?:-(?:0|[1-9]\d*|[\da-z-]*[a-z-][\da-z-]*)(?:\.(?:0|[1-9]\d*|[\da-z-]*[a-z-][\da-z-]*))*)?(?:\+[\da-z-]+(?:\.[\da-z-]+)*)?(?=$|\s)/gi
+function converted() {
+  return /(?<=^v?|\sv?)(?:(?:0|[1-9]\d*)\.){2}(?:0|[1-9]\d*)(?:-(?:0|[1-9]\d*|[\da-z-]*[a-z-][\da-z-]*)(?:\.(?:0|[1-9]\d*|[\da-z-]*[a-z-][\da-z-]*))*)?(?:\+[\da-z-]+(?:\.[\da-z-]+)*)?(?=$|\s)/gi;
+}
 
 //Regular Expression Denial of Service (ReDoS)
-function (formatString) {
+function name19 (formatString) {
         var re = /\[([^\[\]]*|\[[^\[\]]*\])*\]|([A-Za-z])\2+|\.{3}|./g, keys, pattern = [formatString];
 
         while ((keys = re.exec(formatString))) {
@@ -919,12 +924,12 @@ function (formatString) {
     }
 
 //Cross-site Request Forgery (CSRF)
-function(params, callback) {
+function name20 (params, callback) {
 		var app = params.router,
 			middleware = params.middleware,
 			controllers = params.controllers;
 			
-		fs.readFile(path.resolve(__dirname, './public/templates/comments/comments.tpl'), function (err, data) {
+		fs.readFile(path.resolve(__dirname, './public/templates/comments/comments.tpl'), function name31(err, data) {
 			Comments.template = data.toString();
 		});
 
@@ -939,19 +944,19 @@ function(params, callback) {
 	}
 
 //Command Injection
-function (val) {
+function name21 (val) {
     args.push(escapeFn(val));
   }
 
 //Cross-site Scripting (XSS)
-function( color ) {
+function name32( color ) {
 								if ( color ) {
 									setColor( color, colorName, history );
 								}
 							}
 
 //Regular Expression Denial of Service (ReDoS)
-function(hljs) {
+function name33(hljs) {
   const commentMode = hljs.COMMENT(/\(\*/, /\*\)/);
 
   const nonTerminalMode = {
@@ -1075,7 +1080,7 @@ function methodByPath(target, path) {
 }
 
 //Information Disclosure
-(env) => {
+function arrowFunc1(env) {
   const toReplace = Object.keys(env).filter((envVar) => {
     // https://github.com/semantic-release/semantic-release/issues/1558
     if (envVar === 'GOPRIVATE') {
@@ -1091,14 +1096,14 @@ function methodByPath(target, path) {
 }
 
 //Regular Expression Denial of Service (ReDoS)
-function(str) {
+function name34(str) {
 		str = str.replace(/^\s*|\s*$/g, '');
 		str = str.replace(/^\t*|\t*$/g, '');
 		return (/^\w+([\.\+-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(str));
 	}
 
 //Arbitrary File Read
-function (request, networkRequest) {
+function name35(request, networkRequest) {
     console.log('Request ' + request.url);
     if (request.url.lastIndexOf(body.url, 0) === 0) {
         return;
@@ -1347,7 +1352,7 @@ function launch (opts, cb) {
 }
 
 //Arbitrary Code Execution
-function(filepath, options) {
+function name36(filepath, options) {
   var src = file.read(filepath, options);
   var result;
   grunt.verbose.write('Parsing ' + filepath + '...');
@@ -1362,7 +1367,7 @@ function(filepath, options) {
 }
 
 //Prototype Pollution
-function(obj, path, value, delimiter) {
+function name37(obj, path, value, delimiter) {
   var arr;
   var key;
   if (!obj || typeof obj !== 'object') {
@@ -1385,7 +1390,7 @@ function(obj, path, value, delimiter) {
 }
 
 //Prototype Pollution
-function(obj, path, value, delimiter) {
+function name38(obj, path, value, delimiter) {
   var arr;
   var key;
   if (!obj || typeof obj !== 'object') {
@@ -1456,7 +1461,7 @@ function reducer(result, arg)
 }
 
 //Prototype Pollution
-function(value, prefix) {
+function name39(value, prefix) {
       if (!prefix) prefix = [];
 
       if (Array.isArray(value)) {
@@ -1473,7 +1478,7 @@ function(value, prefix) {
     }
 
 //Prototype Pollution
-function(config) {
+function name310(config) {
     var entries = [];
 
     var iter = function(value, prefix) {
@@ -1497,7 +1502,7 @@ function(config) {
   }
 
 //Prototype Pollution
-function(configObj, envObj) {
+function name311(configObj, envObj) {
     var context = {
       config: configObj,
       env: envObj || process.env
@@ -1506,7 +1511,7 @@ function(configObj, envObj) {
     var entries = ConnieLang.getEntries(context.config);
 
     // iterate until no updates have been made
-    var digest = function() {
+    var digest = function name312() {
       var updated = false;
 
       entries.forEach(function(e) {
@@ -1534,7 +1539,7 @@ function(configObj, envObj) {
   }
 
 //Prototype Pollution
-function(obj, key, value) {
+function name313(obj, key, value) {
   var o = obj;
   var keys = Array.isArray(key) ? key : key.split('.');
 
@@ -1557,7 +1562,7 @@ function(obj, key, value) {
 }
 
 //Prototype Pollution
-(obj, path, val, options = {}) => {
+function arrowFunc2(obj, path, val, options = {}) {
 	if (obj === undefined || obj === null || path === undefined) {
 		return obj;
 	}
@@ -1598,7 +1603,7 @@ function(obj, key, value) {
 }
 
 //Prototype Pollution
-(obj, path, val, options = {}) => {
+function arrowFunc3(obj, path, val, options = {}) {
 	if (obj === undefined || obj === null || path === undefined) {
 		return obj;
 	}
@@ -1666,7 +1671,7 @@ function open(propsData) {
 }
 
 //Cross-site Scripting (XSS)
-(params) {
+function name40 (params) {
         let parent
         if (typeof params === 'string') {
             params = {
@@ -1702,7 +1707,7 @@ function open(propsData) {
     }
 
 //Cross-site Scripting (XSS)
-(params) {
+function name41 (params) {
         let parent
         if (typeof params === 'string') {
             params = {
@@ -1738,7 +1743,7 @@ function open(propsData) {
     }
 
 //Cross-site Scripting (XSS)
-function () {
+function name314() {
 					this._elt.innerHTML = '<svg viewBox="-20 -20 140 140" width="100" height="100">' +
 						'<defs>' +
 						'<marker id="prism-previewer-easing-marker" viewBox="0 0 4 4" refX="2" refY="2" markerUnits="strokeWidth">' +
@@ -1752,7 +1757,7 @@ function () {
 				}
 
 //Information Exposure
-function(error) {
+function name315(error) {
   if (!error.response || !error.response.request || !error.response.request._data) {
     return error;
   }
@@ -1767,7 +1772,7 @@ function(error) {
 }
 
 //Prototype Pollution
-function deepExtend(target, source, overwrite) {
+function deepExtend1(target, source, overwrite) {
   /* eslint no-restricted-syntax: 0 */
   for (const prop in source) {
     if (prop !== '__proto__') {
@@ -1819,7 +1824,7 @@ function parse_isodur(s) {
 }
 
 //Regular Expression Denial of Service (ReDoS)
-function parse_isodur(s) {
+function parse_isodur1(s) {
 	var sec = 0, mt = 0, time = false;
 	var m = s.match(/P([0-9\.]+Y)?([0-9\.]+M)?([0-9\.]+D)?T([0-9\.]+H)?([0-9\.]+M)?([0-9\.]+S)?/);
 	if(!m) throw new Error("|" + s + "| is not an ISO8601 Duration");
@@ -1921,7 +1926,7 @@ function getBranches(config, privkey, done) {
 }
 
 //Cross-site Scripting (XSS)
-(value, options) {
+function name316(value, options) {
     if (!value) {
       return '';
     }
@@ -1939,7 +1944,7 @@ function getBranches(config, privkey, done) {
   }
 
 //Cross-site Scripting (XSS)
-getValueAsString(value, options) {
+function namegetValueAsString(value, options) {
     if (!value) {
       return '';
     }
@@ -1974,7 +1979,7 @@ function escapeshellarg (arg) {
 }
 
 //Cross-site Scripting (XSS)
-(req, url, publicUrl, opt_nokey) => {
+function name42 (req, url, publicUrl, opt_nokey) {
   if (!url || (typeof url !== 'string') || url.indexOf('local://') !== 0) {
     return url;
   }
@@ -1991,7 +1996,7 @@ function escapeshellarg (arg) {
 }
 
 //Cross-site Scripting (XSS)
-(child, index) => {
+function arrowFunc4(child, index) {
           child.index = index
           const childField = child.dom.field
           if (childField) {
@@ -2000,7 +2005,7 @@ function escapeshellarg (arg) {
         }
 
 //Cross-site Scripting (XSS)
-() {
+function name43 () {
     const domValue = this.dom.value
     const childs = this.childs
     if (domValue && childs) {
@@ -2027,7 +2032,7 @@ function escapeshellarg (arg) {
   }
 
 //Cross-site Scripting (XSS)
-_updateDomIndexes () {
+function name_updateDomIndexes () {
     const domValue = this.dom.value
     const childs = this.childs
     if (domValue && childs) {
@@ -2054,7 +2059,7 @@ _updateDomIndexes () {
   }
 
 //Cross-site Scripting (XSS)
-function(i, option) {
+function name317(i, option) {
       var item = this.items[option.idx];
       var includes = util.includes(option.textContent.toLowerCase(), string.toLowerCase());
 
@@ -2074,7 +2079,7 @@ function(i, option) {
     }
 
 //Cross-site Scripting (XSS)
-function(e, a) {
+function name318(e, a) {
     var d = document,
         el = d.createElement(e);
     if (a && "[object Object]" === Object.prototype.toString.call(a)) {
@@ -2091,7 +2096,7 @@ function(e, a) {
   }
 
 //Cross-site Scripting (XSS)
-function(placeholder) {
+function name319(placeholder) {
   // Set the placeholder
   placeholder = placeholder || this.config.placeholder || this.el.getAttribute("placeholder");
 
@@ -2167,12 +2172,12 @@ function Markdown({ source, className = "" }) {
   }
 
   return (
-    <div className={cx(className, "markdown")} dangerouslySetInnerHTML={{ __html: sanitized }}></div>
+    `<div className={cx(className, "markdown")} dangerouslySetInnerHTML={{ __html: sanitized }}></div>`
   )
 }
 
 //Insecure Defaults
-({ source, className = "" }) => {
+function arrowFunc5({ source, className = "" }) {
   if(typeof source !== "string") {
     return null
   }
@@ -2188,31 +2193,31 @@ function Markdown({ source, className = "" }) {
     }
 
     return (
-      <div
+      `<div
         dangerouslySetInnerHTML={{
           __html: trimmed
         }}
         className={cx(className, "renderedMarkdown")}
-      />
+      />`
     )
   }
   return null
 }
 
 //Command Injection
-function (files, message, newVer, tagName, callback) {
+function name320(files, message, newVer, tagName, callback) {
   message = escapeQuotes(message.replace("%s", newVer));
   files = files.map(escapeQuotes).join(" ");
   var functionSeries = [
-    function (done) {
+    function name321(done) {
       cp.exec(gitApp + " add " + files, gitExtra, done);
     },
 
-    function (done) {
+    function name322(done) {
       cp.exec([gitApp, "commit", "-m", message].join(" "), gitExtra, done);
     },
 
-    function (done) {
+    function name323(done) {
       cp.exec(
         [gitApp, "tag", "-a", tagName, "-m", message].join(" "),
         gitExtra,
@@ -2224,7 +2229,7 @@ function (files, message, newVer, tagName, callback) {
 }
 
 //Command Injection
-function(trainset) {
+function name324(trainset) {
 
 			// console.log(JSON.stringify(this.modelFileString, null, 4))
 			_.each(trainset, function(value, key, list){
@@ -2245,21 +2250,21 @@ function(trainset) {
 		}
 
 //Remote Code Execution (RCE)
-function (files, message, newVer, tagName, callback) {
+function name325(files, message, newVer, tagName, callback) {
   message = message.replace('%s', newVer).replace('"', '').replace("'", '');
   files = files.map(function (file) {
     return '"' + escapeQuotes(file) + '"';
   }).join(' ');
   var functionSeries = [
-    function (done) {
+    function name326(done) {
       cp.exec(gitApp + ' add ' + files, gitExtra, done);
     },
 
-    function (done) {
+    function name327(done) {
       cp.exec([gitApp, 'commit', '-m', '"' + message + '"'].join(' '), gitExtra, done);
     },
 
-    function (done) {
+    function name328(done) {
       cp.exec(
         [
           gitApp, 'tag', '-a', tagName, '-m', '"' + message + '"'
@@ -2272,7 +2277,7 @@ function (files, message, newVer, tagName, callback) {
 }
 
 //Arbitrary Code Execution
-function ($$__fn__$$, options) {
+function name329($$__fn__$$, options) {
   assert(typeof $$__fn__$$ === 'function')
   options = options || {}
   options.withCallback = true
@@ -2287,7 +2292,7 @@ function thenify($$__fn__$$, options) {
 }
 
 //Information Exposure
-function (err, data) {
+function name330(err, data) {
         if (err) return cb(err)
 
         if (!isPrivate) {
@@ -2303,7 +2308,7 @@ function (err, data) {
       }
 
 //Information Exposure
-function (err, data) {
+function name331(err, data) {
         if (err) return cb(err)
 
         if (!isPrivate) {
@@ -2319,7 +2324,7 @@ function (err, data) {
       }
 
 //Cross-site Scripting (XSS)
-function(node) {
+function name332(node) {
     fragment.appendChild(node);
   }
 
@@ -2424,7 +2429,7 @@ function parse (string) {
 }
 
 //Improper Access Control
-function(message, local, callback, context) {
+function name333(message, local, callback, context) {
     var method = Faye.Channel.parse(message.channel)[1],
         response;
 
@@ -2443,7 +2448,7 @@ function(message, local, callback, context) {
   }
 
 //Improper Access Control
-function(response, connectionType) {
+function name334(response, connectionType) {
     if (Faye.indexOf([Faye.Channel.HANDSHAKE, Faye.Channel.CONNECT], response.channel) < 0)
       return;
 
@@ -2513,7 +2518,7 @@ function f(a){var b=a.currentTarget,c=b.getAttribute("data-vimeo"),d=b.getAttrib
 function h(a){var b=a.currentTarget,c=b.getAttribute("data-youtube"),d=b.getAttribute("data-ytparams")||"";d&&!m.test(d)&&(d="&"+d),a.preventDefault(),b.innerHTML='<iframe src="'+o.replace(k,c)+d+'" frameborder="0" allowfullscreen="" width="640" height="390"></iframe>',b.removeEventListener("click",h)}
 
 //Command Injection
-(message, options, callback) {
+function name44 (message, options, callback) {
         message = message.replace(/\"/g, "\\");
         if (typeof options === "function") {
             callback = options;
@@ -2523,7 +2528,7 @@ function h(a){var b=a.currentTarget,c=b.getAttribute("data-youtube"),d=b.getAttr
     }
 
 //Command Injection
-(options, callback) {
+function name45 (options, callback) {
         if (typeof options === "function") {
             callback = options;
             options = ".";
@@ -2532,7 +2537,7 @@ function h(a){var b=a.currentTarget,c=b.getAttribute("data-youtube"),d=b.getAttr
     }
 
 //Command Injection
-(options, callback) {
+function name46 (options, callback) {
         if (typeof options === "function") {
             callback = options;
             options = "";
@@ -2541,7 +2546,7 @@ function h(a){var b=a.currentTarget,c=b.getAttribute("data-youtube"),d=b.getAttr
     }
 
 //Command Injection
-(options, callback) {
+function name47 (options, callback) {
         if (typeof options === "function") {
             callback = options;
             options = "";
@@ -2550,7 +2555,7 @@ function h(a){var b=a.currentTarget,c=b.getAttribute("data-youtube"),d=b.getAttr
     }
 
 //Command Injection
-(gitUrl, options, callback) {
+function name48 (gitUrl, options, callback) {
         if (typeof options === "function") {
             callback = options;
             options = "";
@@ -2559,7 +2564,7 @@ function h(a){var b=a.currentTarget,c=b.getAttribute("data-youtube"),d=b.getAttr
     }
 
 //Command Injection
-commit (message, options, callback) {
+function namecommit (message, options, callback) {
         message = message.replace(/\"/g, "\\");
         if (typeof options === "function") {
             callback = options;
@@ -2569,7 +2574,7 @@ commit (message, options, callback) {
     }
 
 //Command Injection
-pull (options, callback) {
+function namepull (options, callback) {
         if (typeof options === "function") {
             callback = options;
             options = "";
@@ -2578,7 +2583,7 @@ pull (options, callback) {
     }
 
 //Command Injection
-add (options, callback) {
+function nameadd (options, callback) {
         if (typeof options === "function") {
             callback = options;
             options = ".";
@@ -2587,7 +2592,7 @@ add (options, callback) {
     }
 
 //Command Injection
-branch (options, callback) {
+function namebranch (options, callback) {
         if (typeof options === "function") {
             callback = options;
             options = "";
@@ -2596,7 +2601,7 @@ branch (options, callback) {
     }
 
 //Command Injection
-checkout (options, callback) {
+function namecheckout (options, callback) {
         if (typeof options === "function") {
             callback = options;
             options = "";
@@ -2605,7 +2610,7 @@ checkout (options, callback) {
     }
 
 //Command Injection
-clone (gitUrl, options, callback) {
+function nameclone (gitUrl, options, callback) {
         if (typeof options === "function") {
             callback = options;
             options = "";
@@ -2614,7 +2619,7 @@ clone (gitUrl, options, callback) {
     }
 
 //Cross-site Request Forgery (CSRF)
-(err) => {
+function name49 (err) {
     // Output full error objects
     err.message = err.stack;
     console.error(err);
@@ -2643,7 +2648,7 @@ function getOriginOfRequest(req) {
 }
 
 //Prototype Pollution
-function (obj, path, val) {
+function name335(obj, path, val) {
   var segs = path.split('.');
   var attr = segs.pop();
   var src = obj;
@@ -2694,7 +2699,7 @@ function setDeepProperty(obj, propertyPath, value) {
 }
 
 //Prototype Pollution
-function (obj, path, val) {
+function name336(obj, path, val) {
   var segs = path.split('.');
   var attr = segs.pop();
   var src = obj;
@@ -2711,7 +2716,7 @@ function (obj, path, val) {
 }
 
 //Prototype Pollution
-function(object, keypath, value) {
+function name337(object, keypath, value) {
     var k, kp, o;
     if (typeof keypath === 'string') {
         keypath = keypath.split('.');
@@ -2747,7 +2752,7 @@ function(object, keypath, value) {
 }
 
 //Command Injection
-(scanner) {
+async function name410 (scanner) {
         const path = this.settings[scanner].path || null;
         if (!path) {
             if (this.settings.debug_mode) console.log(`${this.debug_label}: Could not determine path for clamav binary.`);
@@ -2775,7 +2780,7 @@ function(object, keypath, value) {
     }
 
 //Command Injection
-async _is_clamav_binary(scanner) {
+async function _is_clamav_binary(scanner) {
         const path = this.settings[scanner].path || null;
         if (!path) {
             if (this.settings.debug_mode) console.log(`${this.debug_label}: Could not determine path for clamav binary.`);
@@ -2806,7 +2811,7 @@ async _is_clamav_binary(scanner) {
 function pointFpMultiply(b){if(this.isInfinity()){return this}if(b.signum()==0){return this.curve.getInfinity()}var g=b;var f=g.multiply(new BigInteger("3"));var l=this.negate();var d=this;var c;for(c=f.bitLength()-2;c>0;--c){d=d.twice();var a=f.testBit(c);var j=g.testBit(c);if(a!=j){d=d.add(a?this:l)}}return d}
 
 //Timing Attack
-function pointFpMultiply(k) {
+function pointFpMultiply1(k) {
     if(this.isInfinity()) return this;
     if(k.signum() == 0) return this.curve.getInfinity();
 
@@ -2863,7 +2868,7 @@ function pointFpMultiplyTwo(j,x,k) {
 }
 
 //Regular Expression Denial of Service (ReDoS)
-function(list, line) {
+function name338(list, line) {
       if (isMochaInternal(line)) {
         return list;
       }
@@ -2882,7 +2887,7 @@ function(list, line) {
     }
 
 //Regular Expression Denial of Service (ReDoS)
-function(stack) {
+function name339(stack) {
     stack = stack.split('\n');
 
     stack = stack.reduce(function(list, line) {
@@ -2926,7 +2931,7 @@ async _ => {
         }
 
 //Improper Authentication
-(resolve, reject) => {
+function arrowFunc6(resolve, reject) {
       this.unlock()
         .then(async _ => {
           const from = this.unlockedAccount
@@ -2951,7 +2956,7 @@ async _ => {
     }
 
 //Improper Authentication
-addAccounts (n = 1) {
+function addAccounts (n = 1) {
 
     return new Promise((resolve, reject) => {
       this.unlock()
@@ -2979,7 +2984,7 @@ addAccounts (n = 1) {
   }
 
 //Improper Authentication
-(resolve, reject) => {
+function arrowFunc7(resolve, reject) {
       this.unlock()
         .then(async _ => {
           const from = this.unlockedAccount
@@ -3004,7 +3009,7 @@ addAccounts (n = 1) {
     }
 
 //Improper Authentication
-(n = 1) {
+function name340(n = 1) {
 
     return new Promise((resolve, reject) => {
       this.unlock()
@@ -3032,7 +3037,7 @@ addAccounts (n = 1) {
   }
 
 //Improper Authentication
-(address) {
+function name341(address) {
     if (!this.accounts.map(a => a.toLowerCase()).includes(address.toLowerCase())) {
       throw new Error(`Address ${address} not found in this keyring`)
     }
@@ -3040,7 +3045,7 @@ addAccounts (n = 1) {
   }
 
 //Improper Authentication
-addAccounts (n = 1) {
+function addAccounts1 (n = 1) {
 
     return new Promise((resolve, reject) => {
       this.unlock()
@@ -3068,7 +3073,7 @@ addAccounts (n = 1) {
   }
 
 //Prototype Pollution
-function (key, index) {
+function name342(key, index) {
       if (typeof o === 'object' && o[key] === undefined) {
         o[key] = {}
       }
@@ -3089,7 +3094,7 @@ function (key, index) {
     }
 
 //Prototype Pollution
-function(target, source) {
+function name343(target, source) {
 		for (var name in source) {
 			var tval = target[name],
   			    sval = source[name];
@@ -3115,7 +3120,7 @@ function(target, source) {
 	}
 
 //Regular Expression Denial of Service (ReDoS)
-(i) {
+function name344(i) {
     const s = this.source
     const l = s.length
     if (i >= l) {
@@ -3129,7 +3134,7 @@ function(target, source) {
   }
 
 //Regular Expression Denial of Service (ReDoS)
-(i) {
+function name345(i) {
     const s = this.source
     const l = s.length
     if (i >= l) {
@@ -3143,7 +3148,7 @@ function(target, source) {
   }
 
 //Regular Expression Denial of Service (ReDoS)
-at(i) {
+function nameat(i) {
     const s = this.source
     const l = s.length
     if (i >= l) {
@@ -3157,7 +3162,7 @@ at(i) {
   }
 
 //Regular Expression Denial of Service (ReDoS)
-nextIndex(i) {
+function namenextIndex(i) {
     const s = this.source
     const l = s.length
     if (i >= l) {
@@ -3188,7 +3193,7 @@ function writeConfig(output, key, value, recurse) {
 }
 
 //Command Injection
-function(repo, cb) {
+function name346(repo, cb) {
 	var self = this;
 	var dir = this.checkoutDir(repo.organization, repo.name);
 	mkdirp(dir, init);
@@ -3233,7 +3238,7 @@ function(repo, cb) {
 }
 
 //Command Injection
-function(repo, cb) {
+function name347(repo, cb) {
 	var self = this;
 	var dir = this.checkoutDir(repo.organization, repo.name);
 	repo.id = repo.commit + '.' + Date.now();
@@ -3250,7 +3255,7 @@ function(repo, cb) {
 }
 
 //Remote Code Execution (RCE)
-(commandName, target, message) {
+function name411 (commandName, target, message) {
         var that = this;
 
         // Maximum length of target + message we can send to the IRC server is 500 characters
@@ -3266,7 +3271,7 @@ function(repo, cb) {
     }
 
 //Remote Code Execution (RCE)
-sendMessage(commandName, target, message) {
+function namesendMessage(commandName, target, message) {
         var that = this;
 
         // Maximum length of target + message we can send to the IRC server is 500 characters
@@ -3282,7 +3287,7 @@ sendMessage(commandName, target, message) {
     }
 
 //Remote Code Execution (RCE)
-(node, output, state) => {
+function name412 (node, output, state) {
 			let code;
 			if (node.lang && highlight.getLanguage(node.lang))
 				code = highlight.highlight(node.lang, node.content, true); // Discord seems to set ignore ignoreIllegals: true
@@ -3297,7 +3302,7 @@ sendMessage(commandName, target, message) {
 		}
 
 //Cross-site Scripting (XSS)
-(markup, theme, options) {
+function name413 (markup, theme, options) {
 		const html = htmlUtils.processImageTags(markup, data => {
 			if (!data.src) return null;
 
@@ -3327,7 +3332,7 @@ sendMessage(commandName, target, message) {
 	}
 
 //Cross-site Scripting (XSS)
-render(markup, theme, options) {
+function namerender(markup, theme, options) {
 		const html = htmlUtils.processImageTags(markup, data => {
 			if (!data.src) return null;
 
@@ -3357,7 +3362,7 @@ render(markup, theme, options) {
 	}
 
 //Prototype Pollution
-function (payload, mime, next) {
+function name348(payload, mime, next) {
 
     // Binary
 
@@ -3388,7 +3393,7 @@ function (payload, mime, next) {
 }
 
 //Prototype Pollution
-function (obj, tgt, path) {
+function name349(obj, tgt, path) {
   tgt = tgt || {}
   path = path || []
   var isArray = Array.isArray(obj)
@@ -3422,7 +3427,7 @@ function (obj, tgt, path) {
 }
 
 //Prototype Pollution
-function (obj, tgt, path) {
+function name350(obj, tgt, path) {
   tgt = tgt || {}
   path = path || []
   var isArray = Array.isArray(obj)
@@ -3475,7 +3480,7 @@ function createMuteOgg(outputFile, options) {
 }
 
 //Command Injection
-function(path, opts, cb) {
+function name351(path, opts, cb) {
   if (!cb) {
     cb = opts;
     opts = {};
@@ -3493,7 +3498,7 @@ function(path, opts, cb) {
 }
 
 //Cross-site Scripting (XSS)
-function ( event ) {
+function name352( event ) {
 				var data = event.data;
 
 				// Make sure we're dealing with JSON
@@ -3537,7 +3542,7 @@ function setupPostMessage() {
 	}
 
 //Internal Property Tampering
-function (schema, candidate, callback) {
+function name353(schema, candidate, callback) {
 			if (typeof callback === 'function') {
 				return this.asyncItems(schema, candidate, callback);
 			}
@@ -3570,7 +3575,7 @@ function (schema, candidate, callback) {
 		}
 
 //Internal Property Tampering
-function (schema, post, callback) {
+function name354(schema, post, callback) {
 			if (typeof callback === 'function') {
 				return this.asyncItems(schema, post, callback);
 			}
@@ -3599,7 +3604,7 @@ function (schema, post, callback) {
 		}
 
 //Internal Property Tampering
-function (schema) {
+function name355(schema) {
 			var o = {};
 			var prop = schema.properties || {};
 
@@ -3641,33 +3646,33 @@ function Inspection(schema, custom) {
 			}
 		}
 
-		this._getDepth = function () {
+		this._getDepth = function name356() {
 			return _stack.length;
 		};
 
-		this._dumpStack = function () {
+		this._dumpStack = function name357() {
 			return _stack.map(function (i) {return i.replace(/^\[/g, '\u001b\u001c\u001d\u001e');})
 			.join('.').replace(/\.\u001b\u001c\u001d\u001e/g, '[');
 		};
 
-		this._deeperObject = function (name) {
+		this._deeperObject = function name358(name) {
 			_stack.push((/^[a-z$_][a-z0-9$_]*$/i).test(name) ? name : '["' + name + '"]');
 			return this;
 		};
 
-		this._deeperArray = function (i) {
+		this._deeperArray = function name359(i) {
 			_stack.push('[' + i + ']');
 			return this;
 		};
 
-		this._back = function () {
+		this._back = function name360() {
 			_stack.pop();
 			return this;
 		};
 	}
 
 //Cross-site Scripting (XSS)
-function () {
+function name361() {
 
     this.response.payload.code = this.response.code;
     this.response.payload.error = Http.STATUS_CODES[this.response.code] || 'Unknown';
@@ -3677,7 +3682,7 @@ function () {
 }
 
 //Cross-site Scripting (XSS)
-function (url, width, height) {
+function name362(url, width, height) {
 					var attrs  = '';
 
 					if (width) {
@@ -3694,7 +3699,7 @@ function (url, width, height) {
 				}
 
 //Cross-site Scripting (XSS)
-function (email, text) {
+function name363(email, text) {
 					// needed for IE to reset the last range
 					editor.focus();
 
@@ -3710,7 +3715,7 @@ function (email, text) {
 				}
 
 //Cross-site Scripting (XSS)
-function (url, text) {
+function name364(url, text) {
 				// needed for IE to restore the last range
 				editor.focus();
 
@@ -3729,14 +3734,14 @@ function (url, text) {
 			}
 
 //Cross-site Scripting (XSS)
-function (caller) {
+function name365(caller) {
 			var	editor  = this;
 
 			defaultCmds.image._dropDown(
 				editor,
 				caller,
 				'',
-				function (url, width, height) {
+				function name366(url, width, height) {
 					var attrs  = '';
 
 					if (width) {
@@ -3755,13 +3760,13 @@ function (caller) {
 		}
 
 //Cross-site Scripting (XSS)
-function (caller) {
+function name367(caller) {
 			var	editor  = this;
 
 			defaultCmds.email._dropDown(
 				editor,
 				caller,
-				function (email, text) {
+				function name368(email, text) {
 					// needed for IE to reset the last range
 					editor.focus();
 
@@ -3779,7 +3784,7 @@ function (caller) {
 		}
 
 //Cross-site Scripting (XSS)
-function (caller) {
+function name369(caller) {
 			var editor = this;
 
 			defaultCmds.link._dropDown(editor, caller, function (url, text) {
@@ -3802,7 +3807,7 @@ function (caller) {
 		}
 
 //Cross-site Scripting (XSS)
-function (caller, html, author) {
+function name370(caller, html, author) {
 			var	before = '<blockquote>',
 				end    = '</blockquote>';
 
@@ -3821,7 +3826,7 @@ function (caller, html, author) {
 		}
 
 //Cross-site Scripting (XSS)
-(item, i) => {
+function arrowFunc8(item, i) {
       const img = item.querySelector('img');
       const image = document.createElement('img');
 
@@ -3844,7 +3849,7 @@ function (caller, html, author) {
     }
 
 //Cross-site Scripting (XSS)
-(image, i) => {
+function arrowFunc9(image, i) {
       const { src } = image;
       const alt = image.alt || getImageNameFromURL(src);
       let { url } = options;
@@ -3902,7 +3907,7 @@ function sanitizePath(id, name, callback) {
 }
 
 //Prototype Pollution
-function(obj, field) {
+function name371(obj, field) {
     if (!obj) {
       return obj;
     }
@@ -3913,7 +3918,7 @@ function(obj, field) {
   }
 
 //Prototype Pollution
-function(instance) {
+function name372(instance) {
   instance.registerHelper('lookup', function(obj, field) {
     if (!obj) {
       return obj;
@@ -3926,7 +3931,7 @@ function(instance) {
 }
 
 //Prototype Pollution
-function baseExtend(dst, objs, deep) {
+function baseExtend1(dst, objs, deep) {
   var h = dst.$$hashKey;
 
   for (var i = 0, ii = objs.length; i < ii; ++i) {
@@ -3990,7 +3995,7 @@ function getNAF(num, w) {
 }
 
 //Prototype Pollution
-function extend(target, source) {
+function extend1(target, source) {
   let key;
   for (key in source) {
     if (isPlainObject(source[key]) || isArray(source[key])) {
@@ -4008,13 +4013,13 @@ function extend(target, source) {
 }
 
 //Unauthorized File Access
-(dir) => {
+function name414 (dir)  {
             return (path.normalize(dir ? path.resolve(repoDir, dir) : repoDir));
         }
 
 //Unauthorized File Access
-(repoDir, options={}) {
-    super();
+function name415 (repoDir, options={}) {
+    // super();
 
     if(typeof repoDir === 'function') {
         this.dirMap = repoDir;
@@ -4030,8 +4035,8 @@ function extend(target, source) {
   }
 
 //Unauthorized File Access
-constructor(repoDir, options={}) {
-    super();
+function nameconstructor1(repoDir, options={}) {
+    // super();
 
     if(typeof repoDir === 'function') {
         this.dirMap = repoDir;
@@ -4083,7 +4088,7 @@ function installMixin (Vue, vueVersion) {
 }
 
 //SQL Injection
-(value) {
+function name416 (value) {
     return value !== '*' ? `[${value.replace(/\[/g, '[')}]` : '*';
   }
 
@@ -4129,7 +4134,7 @@ function onsocket(socket) {
   }
 
 //Cross-site Scripting (XSS)
-function(event) {
+function name373(event) {
         try {
             var msg = "";
 
@@ -4166,17 +4171,17 @@ function __isInt(value) {
     }
 
 //Regular Expression Denial of Service (ReDoS)
-(value){
+function name417 (value){
     return /^(\-|\+)?([1-9]+[0-9]*)$/.test(value)
   }
 
 //Regular Expression Denial of Service (ReDoS)
-__isInt(value){
+function __isInt1(value){
     return /^(\-|\+)?([1-9]+[0-9]*)$/.test(value)
   }
 
 //Cross-site Scripting (XSS)
-(file, i) => `<li><a download="${file.name}" href="/${i}/${file.name}">${file.path}</a> (${file.length} bytes)</li>`
+function name418 (file, i) { return `<li><a download="${file.name}" href="/${i}/${file.name}">${file.path}</a> (${file.length} bytes)</li>`}
 
 //Cross-site Scripting (XSS)
 function serveIndexPage () {
@@ -4193,7 +4198,7 @@ function serveIndexPage () {
     }
 
 //Cross-site Scripting (XSS)
-() {
+function name419 () {
 		const button = new ButtonView( this.locale );
 		const bind = this.bindTemplate;
 		const t = this.t;
@@ -4227,7 +4232,7 @@ function serveIndexPage () {
 	}
 
 //Cross-site Scripting (XSS)
-_createPreviewButton() {
+function name_createPreviewButton() {
 		const button = new ButtonView( this.locale );
 		const bind = this.bindTemplate;
 		const t = this.t;
@@ -4261,7 +4266,7 @@ _createPreviewButton() {
 	}
 
 //Cross-site Scripting (XSS)
-(encodings) {
+function name420 (encodings) {
         let table = "<table class='table table-hover table-sm table-bordered table-nonfluid'><tr><th>Encoding</th><th>Value</th></tr>";
 
         for (const enc in encodings) {
@@ -4274,7 +4279,7 @@ _createPreviewButton() {
     }
 
 //Cross-site Scripting (XSS)
-present(encodings) {
+function namepresent(encodings) {
         let table = "<table class='table table-hover table-sm table-bordered table-nonfluid'><tr><th>Encoding</th><th>Value</th></tr>";
 
         for (const enc in encodings) {
@@ -4287,13 +4292,13 @@ present(encodings) {
     }
 
 //Cross-site Scripting (XSS)
-function (msg) {
+function name374(msg) {
       var $msg = $("<div>" + msg + "</div>");
       this.$region.html($msg);
     }
 
 //Arbitrary Code Execution
-(node, initialScope) {
+function name421 (node, initialScope) {
         const object = getStaticValueR(node.object, initialScope)
         const property = node.computed
             ? getStaticValueR(node.property, initialScope)
@@ -4306,7 +4311,7 @@ function (msg) {
     }
 
 //Arbitrary Code Execution
-(node, initialScope) {
+function name422 (node, initialScope) {
         const callee = getStaticValueR(node.callee, initialScope)
         const args = getElementValues(node.arguments, initialScope)
 
@@ -4319,7 +4324,7 @@ function (msg) {
     }
 
 //Arbitrary Code Execution
-(node, initialScope) {
+function name423 (node, initialScope) {
         const tag = getStaticValueR(node.tag, initialScope)
         const expressions = getElementValues(
             node.quasi.expressions,
@@ -4372,7 +4377,7 @@ async function createVerificationObjects(signatureList, literalDataList, keys, d
 }
 
 //Cross-site Scripting (XSS)
-function(req, res, next) {
+function name375(req, res, next) {
 	var url = req.query.url,
 		data = {
 			url: url,
@@ -4412,7 +4417,7 @@ function connectToWifi(config, ap, callback) {
 }
 
 //Arbitrary Command Injection
-function deleteConnection(config, ap, callback) {
+function deleteConnection1(config, ap, callback) {
   var commandStr = 'nmcli connection delete id ';
 
   commandStr += ' ' + "'" + ap.ssid + "'";
@@ -4436,7 +4441,7 @@ function disconnect(config, callback) {
 }
 
 //Arbitrary Command Injection
-function connectToWifi(config, ap, callback) {
+function connectToWifi1(config, ap, callback) {
   var iface = 'en0';
   var commandStr = 'networksetup -setairportnetwork ';
 
@@ -4508,7 +4513,7 @@ function deleteConnection(config, ap, callback) {
 }
 
 //Arbitrary Command Injection
-function() {
+function name376() {
       var cmd =
         'netsh wlan connect ssid="' + ap.ssid + '" name="' + ap.ssid + '"';
       if (config.iface) {
@@ -4518,14 +4523,14 @@ function() {
     }
 
 //Arbitrary Command Injection
-function(err) {
+function name377(err) {
       exec('netsh wlan delete profile "' + ap.ssid + '"', { env }, function() {
         callback && callback(err);
       });
     }
 
 //Directory Traversal
-function(src,dest,callback)
+function name378(src,dest,callback)
 	{
 		switch(_os.type())
 		{
@@ -4551,7 +4556,7 @@ function(src,dest,callback)
 	}
 
 //Directory Traversal
-function(dir,callback)
+function name379(dir,callback)
 	{
         var split_dir = dir.split('/'),
             curr_dir = '';
@@ -4565,7 +4570,7 @@ function(dir,callback)
 	}
 
 //Directory Traversal
-function(dir,callback)
+function name380(dir,callback)
 	{
 		switch(_os.type())
 		{
@@ -4584,7 +4589,7 @@ function(dir,callback)
 	}
 
 //Directory Traversal
-function(path) {
+function name381(path) {
    if( _fs.existsSync(path) ) {
        _fs.readdirSync(path).forEach(function(file,index){
            var curPath = path + "/" + file;
@@ -4599,7 +4604,7 @@ function(path) {
 }
 
 //Cross-site Scripting (XSS)
-function(entry) {
+function name382(entry) {
 
         if (!entry.id) {
           throw new Error('entry must have an id');
@@ -4631,7 +4636,7 @@ function(entry) {
       }
 
 //Cross-site Scripting (XSS)
-function(option) {
+function name383(option) {
     var optionEntry = domify('<option value="' + option.value + '">' + option.label + '</option>');
     selectBox.appendChild(optionEntry);
   }
@@ -4651,7 +4656,7 @@ function updateOptionsDropDown(domSelector, businessObject, referencedType, entr
 }
 
 //Cross-site Scripting (XSS)
-function(element, inputNode) {
+function name384(element, inputNode) {
       // note: this generated id will be used as name
       // of the element and not as id
       var id = utils.nextId(newElementIdPrefix);
@@ -4675,12 +4680,12 @@ function(element, inputNode) {
     }
 
 //Cross-site Scripting (XSS)
-function(value) {
+function name385(value) {
     return '<option value="' + value + '" data-value data-name="extensionElementValue">' + value + '</option>';
   }
 
 //Cross-site Scripting (XSS)
-function(entry) {
+function name386(entry) {
 
         if (!entry.id) {
           throw new Error('entry must have an id');
@@ -4699,7 +4704,7 @@ function(entry) {
 
         var entryNode = domify('<div class="bpp-properties-entry" data-entry="' + entry.id + '"></div>');
 
-        forEach(entry.cssClasses || [], function(cssClass) {
+        forEach(entry.cssClasses || [], function name387(cssClass) {
           domClasses(entryNode).add(cssClass);
         });
 
@@ -4712,13 +4717,13 @@ function(entry) {
       }
 
 //Cross-site Scripting (XSS)
-function(option) {
+function name388(option) {
     var optionEntry = domify('<option value="' + option.value + '">' + option.label + '</option>');
     selectBox.appendChild(optionEntry);
   }
 
 //Cross-site Scripting (XSS)
-function updateOptionsDropDown(domSelector, businessObject, referencedType, entryNode) {
+function updateOptionsDropDown1(domSelector, businessObject, referencedType, entryNode) {
   var options = refreshOptionsModel(businessObject, referencedType);
   addEmptyParameter(options);
   var selectBox = domQuery(domSelector, entryNode);
@@ -4732,7 +4737,7 @@ function updateOptionsDropDown(domSelector, businessObject, referencedType, entr
 }
 
 //Cross-site Scripting (XSS)
-function(element, inputNode) {
+function name389(element, inputNode) {
       // note: this generated id will be used as name
       // of the element and not as id
       var id = utils.nextId(newElementIdPrefix);
@@ -4756,12 +4761,12 @@ function(element, inputNode) {
     }
 
 //Cross-site Scripting (XSS)
-function(value) {
+function name390(value) {
     return '<option value="' + value + '" data-value data-name="extensionElementValue">' + value + '</option>';
   }
 
 //Cross-site Scripting (XSS)
-function(entry) {
+function name391(entry) {
 
         if (!entry.id) {
           throw new Error('entry must have an id');
@@ -4793,13 +4798,13 @@ function(entry) {
       }
 
 //Cross-site Scripting (XSS)
-function(option) {
+function name392(option) {
     var optionEntry = domify('<option value="' + option.value + '">' + option.label + '</option>');
     selectBox.appendChild(optionEntry);
   }
 
 //Cross-site Scripting (XSS)
-function updateOptionsDropDown(domSelector, businessObject, referencedType, entryNode) {
+function updateOptionsDropDown2(domSelector, businessObject, referencedType, entryNode) {
   var options = refreshOptionsModel(businessObject, referencedType);
   addEmptyParameter(options);
   var selectBox = domQuery(domSelector, entryNode);
@@ -4813,7 +4818,7 @@ function updateOptionsDropDown(domSelector, businessObject, referencedType, entr
 }
 
 //Cross-site Scripting (XSS)
-function(element, inputNode) {
+function name393(element, inputNode) {
       // note: this generated id will be used as name
       // of the element and not as id
       var id = utils.nextId(newElementIdPrefix);
@@ -4837,7 +4842,7 @@ function(element, inputNode) {
     }
 
 //Cross-site Scripting (XSS)
-function(value) {
+function name394(value) {
     return '<option value="' + value + '" data-value data-name="extensionElementValue">' + value + '</option>';
   }
 
@@ -4848,10 +4853,12 @@ function isUrl(string) {
   }
 
 //Cross-site Scripting (XSS)
-([key, value]) => `<pre><strong>${key}</strong>: ${value}</pre>`
+function converted1([key, value]) {
+  return `<pre><strong>${key}</strong>: ${value}</pre>`;
+}
 
 //Cross-site Scripting (XSS)
-function()
+function name395()
 	{
 		var color = input.value;
 		ColorDialog.addRecentColor(color, 12);
@@ -4866,7 +4873,7 @@ function()
 	}
 
 //Cross-site Scripting (XSS)
-(value) => {
+function arrowFunc10(value) {
             if (props.suggestionText) {
               return `<div><strong>${props.suggestionText}</strong> ${value[props.displayKey]}</div>`;
             }
@@ -4874,7 +4881,7 @@ function()
           }
 
 //Directory Traversal
-(Options, FilePath) => {
+function arrowFunc11(Options, FilePath) {
 
 	const Slash = FilePath.split ("")[FilePath.split ("").length - 1] === "/";
 
@@ -4886,10 +4893,12 @@ function()
 }
 
 //Cross-site Scripting (XSS)
-(elem, property, value) => elem.innerHTML = value || state[property].value
+function converted2(elem, property, value) {
+  return elem.innerHTML = value || state[property].value;
+}
 
 //Prototype Pollution
-function set(target, path, value, options) {
+function set2(target, path, value, options) {
   if (!isObject(target)) {
     return target;
   }
@@ -4947,7 +4956,7 @@ function mixinDeep(target, ...rest) {
 }
 
 //Prototype Pollution
-(target, ...args) => {
+function arrowFunc12(target, ...args) {
   let i = 0;
   if (isPrimitive(target)) target = args[i++];
   if (!target) target = {};
@@ -4967,7 +4976,7 @@ function mixinDeep(target, ...rest) {
 }
 
 //Cross-site Scripting (XSS)
-function(t) {
+function name396(t) {
     if (t.matched) {
       htmlText += '<strong class="' + SearchPad.RESULT_HIGHLIGHT_CLASS + '">' + t.matched + '</strong>';
     } else {
@@ -4991,7 +5000,7 @@ function createHtmlText(tokens) {
 }
 
 //Cross-site Scripting (XSS)
-function(t) {
+function name397(t) {
     if (t.matched) {
       htmlText += '<strong class="' + SearchPad.RESULT_HIGHLIGHT_CLASS + '">' + t.matched + '</strong>';
     } else {
@@ -5000,7 +5009,7 @@ function(t) {
   }
 
 //Cross-site Scripting (XSS)
-function createHtmlText(tokens) {
+function createHtmlText1(tokens) {
   var htmlText = '';
 
   tokens.forEach(function(t) {
@@ -5015,7 +5024,7 @@ function createHtmlText(tokens) {
 }
 
 //Denial of Service (DoS)
-function () {
+function name398() {
     let parts = data.split('.');
     let payload = JSON.parse(Buffer.from(parts[1], 'base64').toString());
     if (payload.action === 'LOGOUT') {
@@ -5075,7 +5084,7 @@ function adminLogout (request, response, keycloak) {
 }
 
 //Cross-site Request Forgery (CSRF)
-function (req) {
+function name399(req) {
 	if (req.body && req.body[exports.TOKEN_KEY]) {
 		return req.body[exports.TOKEN_KEY];
 	} else if (req.query && req.query[exports.TOKEN_KEY]) {
@@ -5091,7 +5100,7 @@ function (req) {
 }
 
 //Cross-site Scripting (XSS)
-() {
+function name424 () {
     const opts = this.element.find('option:selected');
     let text = this.getOptionText(opts);
 
@@ -5112,7 +5121,7 @@ function (req) {
     text = text.trim();
     this.pseudoElem.find('span').html(`<span class="audible">${this.label.text()} </span>${text}`);
 
-    // If there is a placeholder set the selected text
+    // If there is a placeholder  the selected text
     if (this.element.attr('placeholder')) {
       this.pseudoElem.find('span').not('.audible').attr('data-selected-text', text);
     }
@@ -5125,7 +5134,7 @@ function (req) {
   }
 
 //Arbitrary Code Injection
-(req, res) => {
+function name3100(req, res)  {
       console.log(req.query)
       let curl = `curl -m 3 -s '${req.query.url}'`
       let t0 = Date.now()
@@ -5141,7 +5150,7 @@ function (req) {
     }
 
 //Cross-site Scripting (XSS)
-() {
+function name3101() {
     const opts = this.element.find('option:selected');
     let text = this.getOptionText(opts);
 
@@ -5162,7 +5171,7 @@ function (req) {
     text = text.trim();
     this.pseudoElem.find('span').html(`<span class="audible">${this.label.text()} </span>${text}`);
 
-    // If there is a placeholder set the selected text
+    // If there is a placeholder  the selected text
     if (this.element.attr('placeholder')) {
       this.pseudoElem.find('span').not('.audible').attr('data-selected-text', text);
     }
@@ -5230,14 +5239,14 @@ function statCb (er, current) {
   }
 
 //Cross-site Scripting (XSS)
-function (id) {
+function name3102(id) {
     if (typeof vertices[id] !== 'undefined') {
       vertices[id].link = linkStr
     }
   }
 
 //Cross-site Scripting (XSS)
-function (ids, linkStr, tooltip) {
+function name3103(ids, linkStr, tooltip) {
   ids.split(',').forEach(function (id) {
     if (typeof vertices[id] !== 'undefined') {
       vertices[id].link = linkStr
@@ -5248,7 +5257,7 @@ function (ids, linkStr, tooltip) {
 }
 
 //Cross-site Scripting (XSS)
-function (ids, linkStr) {
+function name3104(ids, linkStr) {
   ids.split(',').forEach(function (id) {
     let rawTask = findTaskById(id)
     if (typeof rawTask !== 'undefined') {
@@ -5259,7 +5268,7 @@ function (ids, linkStr) {
 }
 
 //Cross-site Scripting (XSS)
-function(val) {
+function name3105(val) {
     this.hidePopover();
     this.textarea.val(val);
     this.body.get(0).innerHTML = val;
@@ -5271,7 +5280,7 @@ function(val) {
   }
 
 //Cross-site Scripting (XSS)
-function(val) {
+function name3106(val) {
     this.hidePopover();
     this.textarea.val(val);
     this.body.get(0).innerHTML = val;
@@ -5283,7 +5292,7 @@ function(val) {
   }
 
 //Cross-site Scripting (XSS)
-(capture, parse, state) {
+function name425 (capture, parse, state) {
         const [, whitespace] = capture[3].match(HTML_LEFT_TRIM_AMOUNT_R);
         const trimmer = new RegExp(`^${whitespace}`, 'gm');
         const trimmed = capture[3].replace(trimmer, '');
@@ -5310,7 +5319,7 @@ function(val) {
       }
 
 //Arbitrary File Overwrite
-function () {
+function name3107() {
         var srcpath = path.resolve(cwd, header.linkname)
 
         xfs.link(srcpath, name, function (err) {
@@ -5324,7 +5333,7 @@ function () {
       }
 
 //Arbitrary File Overwrite
-function () {
+function name3108() {
       if (win32) return next() // skip links on win for now before it can be tested
       xfs.unlink(name, function () {
         var srcpath = path.resolve(cwd, header.linkname)
@@ -5341,7 +5350,7 @@ function () {
     }
 
 //Cross-site Scripting (XSS)
-function(html) {
+function name3109(html) {
   if (!SAFE_PARSING_SUPPORTED) {
     return '';
   }
@@ -5374,25 +5383,25 @@ function staticUsersAuthorizer(username, password) {
     }
 
 //Sensitive Data Exposure
-(uri, config) {
+function name426 (uri, config) {
     const regExp = new RegExp(':?' + (config.password || '') + '@');
     return uri.replace(regExp, ':*****@');
   }
 
 //Prototype Pollution
-function(obj, field) {
+function name3110(obj, field) {
     return obj && obj[field];
   }
 
 //Prototype Pollution
-function(instance) {
+function name3111(instance) {
   instance.registerHelper('lookup', function(obj, field) {
     return obj && obj[field];
   });
 }
 
 //Arbitrary File Overwrite
-(er, st) => {
+function arrowFunc13(er, st) {
         if (st && (this.keep || this.newer && st.mtime > entry.mtime))
           this[SKIP](entry)
         else if (er || (entry.type === 'File' && !this.unlink && st.isFile()))
@@ -5432,7 +5441,7 @@ er => {
     }
 
 //Arbitrary File Overwrite
-(entry) {
+function name427 (entry) {
     this[PEND]()
     this[MKDIR](path.dirname(entry.absolute), this.dmode, er => {
       if (er)
@@ -5457,7 +5466,7 @@ er => {
   }
 
 //Arbitrary File Overwrite
-(entry) {
+function name428 (entry) {
     const er = this[MKDIR](path.dirname(entry.absolute), this.dmode)
     if (er)
       return this[ONERROR](er, entry)
@@ -5488,7 +5497,7 @@ er => {
   }
 
 //Arbitrary File Overwrite
-[CHECKFS] (entry) {
+function name3112(entry) {
     this[PEND]()
     this[MKDIR](path.dirname(entry.absolute), this.dmode, er => {
       if (er)
@@ -5513,7 +5522,7 @@ er => {
   }
 
 //Arbitrary File Overwrite
-[CHECKFS] (entry) {
+function name3113(entry) {
     const er = this[MKDIR](path.dirname(entry.absolute), this.dmode)
     if (er)
       return this[ONERROR](er, entry)
@@ -5556,7 +5565,7 @@ function InstallDots(o) {
 }
 
 //Cross-site Scripting (XSS)
-function(url /* : ?string */) {
+function name3114(url /* : ?string */) {
     if (url == null) {
         return null;
     }
@@ -5577,7 +5586,7 @@ function(url /* : ?string */) {
 }
 
 //Arbitrary Code Execution
-(code) {
+function name429 (code) {
     if (typeof code !== 'string') {
       throw new TypeError('not a string')
     }
@@ -5589,7 +5598,7 @@ function(url /* : ?string */) {
   }
 
 //Arbitrary Code Execution
-runInContext (code) {
+function namerunInContext (code) {
     if (typeof code !== 'string') {
       throw new TypeError('not a string')
     }
@@ -5616,7 +5625,7 @@ function nativeTimingSafeEqual(a, b) {
 }
 
 //Content Injection
-(req, res) => {
+function name430 (req, res) {
         let limit = parseInt(req.query.limit, 10);
         if (!Number.isInteger(limit)) limit = 0;
         const result = this.logHandler.logs.slice(limit * -1);
@@ -5624,7 +5633,7 @@ function nativeTimingSafeEqual(a, b) {
       }
 
 //Content Injection
-() {
+function name431 () {
     const apiRoute = '/embark-api/process-logs/' + this.processName;
     this.embark.registerAPICall(
       'ws',
@@ -5648,7 +5657,7 @@ function nativeTimingSafeEqual(a, b) {
   }
 
 //Content Injection
-registerAPICalls() {
+function nameregisterAPICalls() {
     const apiRoute = '/embark-api/process-logs/' + this.processName;
     this.embark.registerAPICall(
       'ws',
@@ -5699,7 +5708,7 @@ function decrypt(value) {
     }
 
 //Cross-site Scripting (XSS)
-($element, content) {
+function name432 ($element, content) {
     const html = this.config.html
     if (typeof content === 'object' && (content.nodeType || content.jquery)) {
       // Content is a DOM node or a jQuery
@@ -5716,7 +5725,7 @@ function decrypt(value) {
   }
 
 //Cross-site Scripting (XSS)
-setElementContent($element, content) {
+function namesetElementContent($element, content) {
     const html = this.config.html
     if (typeof content === 'object' && (content.nodeType || content.jquery)) {
       // Content is a DOM node or a jQuery
@@ -5733,7 +5742,7 @@ setElementContent($element, content) {
   }
 
 //Information Exposure
-function (pathIN, pathOUT, password, callback) {
+function name3115(pathIN, pathOUT, password, callback) {
   var params = [
     'pkcs12',
     '-in',
@@ -5791,7 +5800,7 @@ function checkPkcs12 (bufferOrPath, passphrase, callback) {
 }
 
 //Cross-site Scripting (XSS)
-function ( i, option ) {
+function name3116( i, option ) {
                 var item = this.items[option.idx];
                 var matches = compare( option.textContent.trim().toLowerCase(), string );
 
@@ -5812,7 +5821,7 @@ function ( i, option ) {
             }
 
 //Prototype Poisoning
-async function (value, definition) {
+async function name3117(value, definition) {
 
     if (!value &&
         definition.encoding === 'form') {
@@ -5848,7 +5857,7 @@ async function (value, definition) {
 }
 
 //Prototype Poisoning
-async function (value, definition) {
+async function name3118(value, definition) {
 
     if (!value &&
         definition.encoding === 'form') {
@@ -5884,7 +5893,7 @@ async function (value, definition) {
 }
 
 //Prototype Poisoning
-async function (value, definition) {
+async function name3119(value, definition) {
 
     if (!value &&
         definition.encoding === 'form') {
@@ -5920,7 +5929,7 @@ async function (value, definition) {
 }
 
 //Cross-site Scripting (XSS)
-function(tElement) {
+function name3120(tElement) {
         var startSym = $interpolate.startSymbol();
         var endSym = $interpolate.endSymbol();
         if (!(startSym === '{{' && endSym === '}}')) {
@@ -5933,7 +5942,7 @@ function(tElement) {
       }
 
 //Cross-site Scripting (XSS)
-(h, { props, data, children }) {
+function name433 (h, { props, data, children }) {
     return h(
       props.footerTag,
       mergeData(data, {
@@ -5952,7 +5961,7 @@ function(tElement) {
   }
 
 //Cross-site Scripting (XSS)
-(h, { props, data, children }) {
+function name434 (h, { props, data, children }) {
     return h(
       props.headerTag,
       mergeData(data, {
@@ -5971,7 +5980,7 @@ function(tElement) {
   }
 
 //Cross-site Scripting (XSS)
-(option, index) => {
+function name435 (option, index) {
       return h('option', {
         key: `option_${index}_opt`,
         attrs: { disabled: Boolean(option.disabled) },
@@ -5980,7 +5989,7 @@ function(tElement) {
     }
 
 //Cross-site Scripting (XSS)
-(h) {
+function name436 (h) {
     let childNodes = h(false)
     if (this.$slots.default) {
       childNodes = this.$slots.default
@@ -6008,7 +6017,7 @@ function(tElement) {
   }
 
 //Cross-site Scripting (XSS)
-(option, idx) => {
+function arrowFunc14(option, idx) {
       const uid = `_BV_option_${idx}_`
       return h(
         this.is_RadioGroup ? 'b-form-radio' : 'b-form-checkbox',
@@ -6048,7 +6057,7 @@ isLast => {
     }
 
 //Cryptographic Backdoor
-function(max) {
+function name3121(max) {
 	// gives a number between 0 (inclusive) and max (exclusive)
 	return crypto.randomBytes(1)[0] % max;
 }
@@ -6116,7 +6125,7 @@ function init() {
 }
 
 //Cross-site Scripting (XSS)
-function (html, allowed) {
+function name3122(html, allowed) {
   if (!html) {
     return '';
   }
@@ -6183,7 +6192,7 @@ async(request, response) => {
 }
 
 //Prototype Pollution
-function (path, o) {
+function name3123(path, o) {
   var parts = typeof path === 'string' ?
     path.split('.') :
     path;
@@ -6213,7 +6222,7 @@ function (path, o) {
 }
 
 //Arbitrary Command Execution
-function (name) {
+function name3124(name) {
     {
       // for now we ignore sense_version. might add it in the api name later
       let api = require('./' + name);
@@ -6222,7 +6231,7 @@ function (name) {
   }
 
 //Arbitrary Command Execution
-function (sense_version, apis, reply) {
+function name3125(sense_version, apis, reply) {
   let result = {};
   _.each(apis, function (name) {
     {
@@ -6261,7 +6270,7 @@ function compile (format) {
 function i(e,n,i){var o=i[0],u=i.length;if(e||s(o)!=="object")o={};for(var a=0;a<u;++a){var f=i[a],l=s(f);if(l!=="object")continue;for(var c in f){var h=e?t.clone(f[c]):f[c];if(n){o[c]=r(o[c],h)}else{o[c]=h}}}return o}
 
 //Prototype  Pollution
-function(e){function r(e,t){if(s(e)!=="object")return t;for(var n in t){if(s(e[n])==="object"&&s(t[n])==="object"){e[n]=r(e[n],t[n])}else{e[n]=t[n]}}return e}function i(e,n,i){var o=i[0],u=i.length;if(e||s(o)!=="object")o={};for(var a=0;a<u;++a){var f=i[a],l=s(f);if(l!=="object")continue;for(var c in f){var h=e?t.clone(f[c]):f[c];if(n){o[c]=r(o[c],h)}else{o[c]=h}}}return o}function s(e){return{}.toString.call(e).slice(8,-1).toLowerCase()}var t=function(e){return i(e===true,false,arguments)},n="merge";t.recursive=function(e){return i(e===true,true,arguments)};t.clone=function(e){var n=e,r=s(e),i,o;if(r==="array"){n=[];o=e.length;for(i=0;i<o;++i)n[i]=t.clone(e[i])}else if(r==="object"){n={};for(i in e)n[i]=t.clone(e[i])}return n};if(e){module.exports=t}else{window[n]=t}}
+function name3126(e){function r(e,t){if(s(e)!=="object")return t;for(var n in t){if(s(e[n])==="object"&&s(t[n])==="object"){e[n]=r(e[n],t[n])}else{e[n]=t[n]}}return e}function i(e,n,i){var o=i[0],u=i.length;if(e||s(o)!=="object")o={};for(var a=0;a<u;++a){var f=i[a],l=s(f);if(l!=="object")continue;for(var c in f){var h=e?t.clone(f[c]):f[c];if(n){o[c]=r(o[c],h)}else{o[c]=h}}}return o}function s(e){return{}.toString.call(e).slice(8,-1).toLowerCase()}var t=function(e){return i(e===true,false,arguments)},n="merge";t.recursive=function(e){return i(e===true,true,arguments)};t.clone=function(e){var n=e,r=s(e),i,o;if(r==="array"){n=[];o=e.length;for(i=0;i<o;++i)n[i]=t.clone(e[i])}else if(r==="object"){n={};for(i in e)n[i]=t.clone(e[i])}return n};if(e){module.exports=t}else{window[n]=t}}
 
 //Arbitrary Command Injection
 function block(callback) {
@@ -6324,7 +6333,7 @@ function blocks(block) {
     }
 
 //Denial of Service (DoS)
-(fieldName, stream, filename, encoding, mimetype) => {
+function arrowFunc15(fieldName, stream, filename, encoding, mimetype) {
       if (!map)
         return reject(
           new FilesBeforeMapUploadError(
@@ -6346,7 +6355,7 @@ function blocks(block) {
     }
 
 //Denial of Service (DoS)
-() => {
+function arrowFunc16() {
       if (map)
         for (const upload of map.values())
           if (!upload.file)
@@ -6367,7 +6376,7 @@ function blocks(block) {
     }
 
 //Denial of Service (DoS)
-(fieldName, stream, filename, encoding, mimetype) => {
+function arrowFunc17(fieldName, stream, filename, encoding, mimetype) {
       if (!map)
         return reject(
           new FilesBeforeMapUploadError(
@@ -6389,7 +6398,7 @@ function blocks(block) {
     }
 
 //Denial of Service (DoS)
-() => {
+function arrowFunc18() {
       request.unpipe(parser)
       request.resume()
 
@@ -6400,7 +6409,7 @@ function blocks(block) {
     }
 
 //Denial of Service (DoS)
-() => {
+function name437 () {
       request.unpipe(parser)
       request.resume()
 
@@ -6411,16 +6420,16 @@ function blocks(block) {
     }
 
 //Denial of Service (DoS)
-function(t,e,n,r){void 0===n&&(n=!1);var i={before:e,after:t,inc:n};if(r)return this._iter(new Y("between",i,r));var o=this._cacheGet("between",i);return!1===o&&(o=this._iter(new x("between",i)),this._cacheAdd("between",o,i)),o}
+function name3127(t,e,n,r){void 0===n&&(n=!1);var i={before:e,after:t,inc:n};if(r)return this._iter(new Y("between",i,r));var o=this._cacheGet("between",i);return!1===o&&(o=this._iter(new x("between",i)),this._cacheAdd("between",o,i)),o}
 
 //Denial of Service (DoS)
-function(t,e){void 0===e&&(e=!1);var n={dt:t,inc:e},r=this._cacheGet("before",n);return!1===r&&(r=this._iter(new x("before",n)),this._cacheAdd("before",r,n)),r}
+function name3128(t,e){void 0===e&&(e=!1);var n={dt:t,inc:e},r=this._cacheGet("before",n);return!1===r&&(r=this._iter(new x("before",n)),this._cacheAdd("before",r,n)),r}
 
 //Denial of Service (DoS)
-function(t,e){void 0===e&&(e=!1);var n={dt:t,inc:e},r=this._cacheGet("after",n);return!1===r&&(r=this._iter(new x("after",n)),this._cacheAdd("after",r,n)),r}
+function name3129(t,e){void 0===e&&(e=!1);var n={dt:t,inc:e},r=this._cacheGet("after",n);return!1===r&&(r=this._iter(new x("after",n)),this._cacheAdd("after",r,n)),r}
 
 //Information Exposure
-(options = {}) {
+async function name438 (options = {}) {
     await new Promise(async resolve => {
       if (!options.https) {
         this.server = http.createServer();
@@ -6447,7 +6456,7 @@ function(t,e){void 0===e&&(e=!1);var n={dt:t,inc:e},r=this._cacheGet("after",n);
   }
 
 //Information Exposure
-async start(options = {}) {
+async function  start(options = {}) {
     await new Promise(async resolve => {
       if (!options.https) {
         this.server = http.createServer();
@@ -6474,7 +6483,7 @@ async start(options = {}) {
   }
 
 //Denial of Service (DoS)
-function (...args) {
+function name3130(...args) {
 		const key = options.cacheKey(...args);
 
 		if (cache.has(key)) {
@@ -6492,7 +6501,7 @@ function (...args) {
 		setData(key, ret);
 
 		if (isPromise(ret) && options.cachePromiseRejection === false) {
-			// Remove rejected promises from cache unless `cachePromiseRejection` is set to `true`
+			// Remove rejected promises from cache unless `cachePromiseRejection` is  to `true`
 			ret.catch(() => cache.delete(key));
 		}
 
@@ -6500,7 +6509,7 @@ function (...args) {
 	}
 
 //Denial of Service (DoS)
-(fn, options) => {
+function arrowFunc19(fn, options) {
 	options = Object.assign({
 		cacheKey: defaultCacheKey,
 		cache: new Map(),
@@ -6536,7 +6545,7 @@ function (...args) {
 		setData(key, ret);
 
 		if (isPromise(ret) && options.cachePromiseRejection === false) {
-			// Remove rejected promises from cache unless `cachePromiseRejection` is set to `true`
+			// Remove rejected promises from cache unless `cachePromiseRejection` is  to `true`
 			ret.catch(() => cache.delete(key));
 		}
 
@@ -6577,7 +6586,7 @@ function replace (string, options) {
   }
 
 //Denial of Service (DoS)
-constructor () {
+function nameconstructor2 () {
     this.header = [] // An array of unfolded header lines
     this.headers = {} // An object that holds header key=value pairs
     this.bodystructure = ''
@@ -6595,7 +6604,7 @@ constructor () {
   }
 
 //Denial of Service (DoS)
-function parse (chunk) {
+function parse1 (chunk) {
   const root = new MimeNode()
   const lines = (typeof chunk === 'object' ? String.fromCharCode.apply(null, chunk) : chunk).split(/\r?\n/g)
   lines.forEach(line => root.writeLine(line))
@@ -6623,7 +6632,7 @@ function unescapeHTML(str) {
 }
 
 //Cross-site Scripting (XSS)
-function (txn, res, params) {
+function name3131(txn, res, params) {
   var inputs = [];
   
   Object.keys(params).forEach(function (k) {
@@ -6638,7 +6647,7 @@ function (txn, res, params) {
 }
 
 //Arbitrary File Write via Archive Extraction (Zip Slip)
-function(entry) {
+function name3132(entry) {
     if (entry.type == 'Directory') return;
     entry.pipe(Writer({
       path: path.join(opts.path,entry.path)
@@ -6669,7 +6678,7 @@ function Extract (opts) {
 }
 
 //Arbitrary Command Injection
-function (err, stdout, stderr) {
+function name3133(err, stdout, stderr) {
         if (err) {
           return reject({
             message: "Failed to combine images",
@@ -6683,7 +6692,7 @@ function (err, stdout, stderr) {
       }
 
 //Arbitrary Command Injection
-function (resolve, reject) {
+function name3134(resolve, reject) {
       exec(combineCommand, function (err, stdout, stderr) {
         if (err) {
           return reject({
@@ -6699,7 +6708,7 @@ function (resolve, reject) {
     }
 
 //Arbitrary Command Injection
-function(imagePaths) {
+function name3135(imagePaths) {
     var pdfImage = this;
     var combineCommand = pdfImage.constructCombineCommandForFile(imagePaths);
     return new Promise(function (resolve, reject) {
@@ -6719,7 +6728,7 @@ function(imagePaths) {
   }
 
 //Uninitialized Memory Exposure
-function(data) {
+function name3136(data) {
   if (!this.writable) {
     var err = new Error('stream not writable')
     err.code = 'EPIPE'
@@ -6736,7 +6745,7 @@ function(data) {
 }
 
 //Arbitrary Command Injection
-function (iface, callback) {
+function name3137(iface, callback) {
     exec("cat /sys/class/net/" + iface + "/address", function (err, out) {
         if (err) {
             callback(err, null);
@@ -6747,7 +6756,7 @@ function (iface, callback) {
 }
 
 //Arbitrary Command Injection
-function (iface, callback) {
+function name3138(iface, callback) {
     exec("ifconfig " + iface, function (err, out) {
         if (err) {
             callback(err, null);
@@ -6763,7 +6772,7 @@ function (iface, callback) {
 }
 
 //Arbitrary Command Injection
-function (iface, callback) {
+function name3139(iface, callback) {
     exec("ipconfig /all", function (err, out) {
         if (err) {
             callback(err, null);
@@ -6785,7 +6794,7 @@ function (iface, callback) {
 }
 
 //Uninitialized Memory Exposure
-function (afterSize) {
+function name3140(afterSize) {
   if (this._size >= afterSize) {
     return;
   }
@@ -6804,7 +6813,7 @@ function (afterSize) {
 }
 
 //Directory Traversal
-function(req, pathname) {
+function name3141(req, pathname) {
     pathname = decodeURI(pathname);
     // jumping to parent directories is not allowed
     if (pathname.indexOf('../') >= 0) {
@@ -6826,7 +6835,7 @@ function(req, pathname) {
       result.etag = etag;
       result.stream = fs.createReadStream(foundPath);
       return result;
-    }).catch(function(err) {
+    }).catch(function name3142(err) {
       if (err.code === 'ENOENT' || err.code === 'ENOTDIR' || err.code === 'EISDIR') {
         return null;
       }
@@ -6835,7 +6844,7 @@ function(req, pathname) {
   }
 
 //Regular Expression Denial of Service (ReDoS)
-function(req, res) {
+function name3143(req, res) {
 
     var _url  = url.parse(req.url);
 
@@ -6871,7 +6880,7 @@ function(req, res) {
   }
 
 //Cross-site Scripting (XSS)
-(name, current) => {
+function arrowFunc20(name, current) {
         const Info = CurrentInfo;
         const link = Info.link;
         const PREFIX = CloudCmd.PREFIX;
@@ -6887,7 +6896,7 @@ function(req, res) {
     }
 
 //Cross-site Scripting (XSS)
-(file) => {
+function nameee(file) {
         const link = prefix + FS + path + file.name;
         
         const type = getType(file.size);
@@ -6955,7 +6964,7 @@ function cloneSpecificValue(val) {
 }
 
 //Insecure Credential Comparison
-function nativeTimingSafeEqual(a, b) {
+function nativeTimingSafeEqual1(a, b) {
     var strA = String(a);
     var strB = String(b);
     
@@ -6968,7 +6977,7 @@ function nativeTimingSafeEqual(a, b) {
 }
 
 //Prototype Pollution
-(merged, source, keys, mergeOpts) => {
+function arrowFunc21(merged, source, keys, mergeOpts) {
 	keys.forEach(key => {
 		if (key in merged) {
 			merged[key] = merge(merged[key], source[key], mergeOpts);
@@ -6992,7 +7001,7 @@ function cloneArray(array) {
 }
 
 //Arbitrary Command Injection
-function(error, stdout, stderr) {
+function name3144(error, stdout, stderr) {
         if (error || stderr || stdout === '' || stdout.indexOf( '/' ) === -1) {
           cp.exec('where ' + name, function (error, stdout, stderr) { //windows
             if (error || stderr || stdout === '' || stdout.indexOf('\\') === -1) {
@@ -7013,7 +7022,7 @@ function(error, stdout, stderr) {
       }
 
 //Regular Expression Denial of Service (ReDoS)
-(text, data) => {
+function arrowFunc22(text, data) {
     if (!data) {
         return text;
     }
@@ -7028,14 +7037,14 @@ function(error, stdout, stderr) {
 }
 
 //Access Restriction Bypass
-function (er) {
+function name3145(er) {
       if (er) return cb(er)
       // Without prefix, nothing will ever work
       correctMkdir(this.prefix, cb)
     }
 
 //Access Restriction Bypass
-function (er) {
+function name3146(er) {
     if (er) return cb(er)
     this.loadUid(function (er) {
       if (er) return cb(er)
@@ -7064,7 +7073,7 @@ function afterUser () {
   }
 
 //Access Restriction Bypass
-function (cb) {
+function name3147(cb) {
   this.setUser(function (er) {
     if (er) return cb(er)
     this.loadUid(function (er) {
@@ -7081,7 +7090,7 @@ function setUser (cb) {
   assert(defaultConf !== Object.prototype)
 
   // If global, leave it as-is.
-  // If not global, then set the user to the owner of the prefix folder.
+  // If not global, then  the user to the owner of the prefix folder.
   // Just set the default, so it can be overridden.
   if (this.get('global')) return cb()
   if (process.env.SUDO_UID) {
@@ -7100,7 +7109,7 @@ function setUser (cb) {
 }
 
 //Access Restriction Bypass
-function () {
+function name3148() {
     correctMkdir(self.where, iferr(cb, function () {
       var pkgs = {}
       self.args.forEach(function (pkg) {
@@ -7114,7 +7123,7 @@ function () {
   }
 
 //Access Restriction Bypass
-function (cb) {
+function name3149(cb) {
   validate('F', arguments)
   log.silly('install', 'readGlobalPackageData')
   var self = this
@@ -7133,7 +7142,7 @@ function (cb) {
 }
 
 //Access Restriction Bypass
-function (cb) {
+function name3150(cb) {
   validate('F', arguments)
   log.silly('install', 'readLocalPackageData')
   var self = this
@@ -7176,7 +7185,7 @@ function finishModule (bundler, child, stageTo, stageFrom) {
 }
 
 //Access Restriction Bypass
-(modules) => {
+function arrowFunc23(modules) {
       if (!modules.length) return
       return correctMkdir(path.join(pkg.realpath, 'node_modules')).then(() => Bluebird.map(modules, (file) => {
         const from = path.join(delpath, 'node_modules', file)
@@ -7204,13 +7213,13 @@ function restoreOldNodeModules () {
   }
 
 //Access Restriction Bypass
-function () {
+function name3151() {
       log.silly('move', 'make sure destination parent exists', path.resolve(to, '..'))
       correctMkdir(path.resolve(to, '..'), iferr(done, moveNodeModules(next)))
     }
 
 //Access Restriction Bypass
-function () {
+function name3152() {
       correctMkdir(from, iferr(done, function () {
         log.silly('move', 'put source node_modules back', fromModules)
         move(tempFromModules, fromModules).then(next, done)
@@ -7281,7 +7290,7 @@ function parseFileHeader(index) {
   }
 
 //Regular Expression Denial of Service (ReDoS)
-function isSafe(userAgent) {
+function isSafe1(userAgent) {
   var consecutive = 0
     , code = 0;
 
@@ -7309,7 +7318,7 @@ function mimeWordsEncode (data = '', mimeWordEncoding = 'Q', fromCharset = 'UTF-
 }
 
 //Cross-site Scripting (XSS)
-function(val) {
+function name3153(val) {
     this.hidePopover();
     this.textarea.val(val);
     this.body.get(0).innerHTML = val;
@@ -7321,7 +7330,7 @@ function(val) {
   }
 
 //Cross-site Scripting (XSS)
-function(val) {
+function name3154(val) {
     this.hidePopover();
     this.textarea.val(val);
     this.body.get(0).innerHTML = val;
@@ -7333,7 +7342,7 @@ function(val) {
   }
 
 //Cross-site Scripting (XSS)
-function(element, name) {
+function name3155(element, name) {
             element.name = name;
 
             // Workaround IE 6/7 issue
@@ -7348,7 +7357,7 @@ function(element, name) {
         }
 
 //Directory Traversal
-function (error, list) {
+function name3156(error, list) {
                     if (error) {
                         console.log(error);
                         res.end(error.toString())
@@ -7396,7 +7405,7 @@ function username(cwd, verbose) {
 }
 
 //Regular Expression Denial of Service (ReDoS)
-function () {
+function name3157() {
       let t = this;
       //assume a contraction produces a word-word
       if (t.silent_term) {
@@ -7458,7 +7467,7 @@ function generateColumnString(column) {
 }
 
 //Regular Expression Denial of Service (ReDoS)
-function() {
+function name3158() {
       var isInside = this.isInside('brace');
       var pos = this.position();
       var m = this.match(/^\{(,+(?:(\{,+\})*),*|,*(?:(\{,+\})*),+)\}/);
@@ -7484,7 +7493,7 @@ function() {
     }
 
 //Regular Expression Denial of Service (ReDoS)
-function(func) {
+function name3159(func) {
     if (func.name) {
       return func.name;
     }
@@ -7496,7 +7505,7 @@ function(func) {
   }
 
 //Regular Expression Denial of Service (ReDoS)
-function(func) {
+function name3160(func) {
     if (func.name) {
       return func.name;
     }
@@ -7508,7 +7517,7 @@ function(func) {
   }
 
 //Regular Expression Denial of Service (ReDoS)
-function () {
+function name3161() {
   'use strict';
 
   function validDataUrl(s) {
@@ -7520,7 +7529,7 @@ function () {
 }
 
 //Regular Expression Denial of Service (ReDoS)
-function (path) {
+function name3162(path) {
         var last        = null,
             splitPathRe = /^(\/?|)([\s\S]*?)((?:\.{1,2}|[^\/]+?|)(\.[^.\/]*|))(?:[\/]*)$/;
 
@@ -7535,10 +7544,10 @@ function (path) {
     }
 
 //Regular Expression Denial of Service (ReDoS)
-function(a){var i=null,p=/^(\/?|)([\s\S]*?)((?:\.{1,2}|[^\/]+?|)(\.[^.\/]*|))(?:[\/]*)$/;if(!a.match(".")){return a}a=p.exec(a).slice(1);i=a[a.length-1];return i!==""?i:a[a.length-2]}
+function name3163(a){var i=null,p=/^(\/?|)([\s\S]*?)((?:\.{1,2}|[^\/]+?|)(\.[^.\/]*|))(?:[\/]*)$/;if(!a.match(".")){return a}a=p.exec(a).slice(1);i=a[a.length-1];return i!==""?i:a[a.length-2]}
 
 //Regular Expression Denial of Service (ReDoS)
-function (path) {
+function name3164(path) {
         var last        = null,
             splitPathRe = /^(\/?|)([\s\S]*?)((?:\.{1,2}|[^\/]+?|)(\.[^.\/]*|))(?:[\/]*)$/;
 
@@ -7553,7 +7562,7 @@ function (path) {
     }
 
 //Variables Overwrite
-function (name) {
+function name3165(name) {
    var Cacheman = require('cacheman');
    var _ = require('underscore');
    var options = {};
@@ -7573,7 +7582,7 @@ function (name) {
 }
 
 //Arbitrary Command Execution
-res => {
+function name439 (res) {
         const branch = res.data.head.ref;
         execSync(
           `git fetch origin pull/${id}/head:${branch} && git checkout ${branch}`
@@ -7581,7 +7590,7 @@ res => {
       }
 
 //Arbitrary Command Execution
-() {
+function name440 () {
     const url = execSync(`git config --get remote.origin.url`, {
       encoding: 'utf8'
     }).trim();
@@ -7590,7 +7599,7 @@ res => {
   }
 
 //Arbitrary Command Execution
-(id) {
+function name441 (id) {
     return this.github.pullRequests
       .get({
         owner: this.owner,
@@ -7609,7 +7618,7 @@ res => {
   }
 
 //Arbitrary Command Execution
-init() {
+function nameinit() {
     const url = execSync(`git config --get remote.origin.url`, {
       encoding: 'utf8'
     }).trim();
@@ -7618,7 +7627,7 @@ init() {
   }
 
 //Arbitrary Command Execution
-fetch(id) {
+function namefetch(id) {
     return this.github.pullRequests
       .get({
         owner: this.owner,
@@ -7637,7 +7646,7 @@ fetch(id) {
   }
 
 //Insecure Credential Comparison
-function nativeTimingSafeEqual(a, b) {
+function nativeTimingSafeEqual2(a, b) {
     var strA = String(a);
     var strB = String(b);
     
@@ -7691,7 +7700,7 @@ function jsonBody (request, reply) {
 }
 
 //Shell Command Injection
-(err) => {
+function arrowFunc24(err) {
 
         if (err && Net.isIP(host) === 0) {
             return callback(new Error('Invalid host'));
@@ -7710,7 +7719,7 @@ function jsonBody (request, reply) {
     }
 
 //Shell Command Injection
-function (host, callback) {
+function name3166(host, callback) {
 
 
     Dns.lookup(host.toUpperCase(), (err) => {
@@ -7733,7 +7742,7 @@ function (host, callback) {
 }
 
 //Identity Spoofing
-(err, remoteId) => {
+function arrowFunc25(err, remoteId) {
     if (err) {
       return callback(err)
     }
@@ -7745,7 +7754,7 @@ function (host, callback) {
   }
 
 //Identity Spoofing
-(state, msg, callback) => {
+function arrowFunc26(state, msg, callback) {
   log('1.1 identify')
 
   state.proposalEncoded.in = msg
@@ -7766,7 +7775,7 @@ function (host, callback) {
 }
 
 //Cross-site Scripting (XSS)
-function(idx, temp, ftr, len){
+function name3167(idx, temp, ftr, len){
 					//keep the current loop. Tx to Adam Freidin
 					var save_pos = ctxt.pos,
 						save_item = ctxt.item,
@@ -7789,7 +7798,7 @@ function(idx, temp, ftr, len){
 				}
 
 //Cross-site Scripting (XSS)
-function(ctxt){
+function name3168(ctxt){
 			var data = ctxt.context || ctxt,
 				v = ctxt[m[0]],
 				i = 0,
@@ -7818,13 +7827,13 @@ function(ctxt){
 		}
 
 //Insecure Randomness
-function() {
+function name3169() {
   var _global = this;
 
   var mathRNG, whatwgRNG;
 
   // NOTE: Math.random() does not guarantee "cryptographic quality"
-  mathRNG = function(size) {
+  mathRNG = function name3170(size) {
     var bytes = new Buffer(size);
     var r;
 
@@ -7837,7 +7846,7 @@ function() {
   }
 
   if (_global.crypto && crypto.getRandomValues) {
-    whatwgRNG = function(size) {
+    whatwgRNG = function name3171(size) {
       var bytes = new Buffer(size); //in browserify, this is an extended Uint8Array
       crypto.getRandomValues(bytes);
       return bytes;
@@ -7849,7 +7858,7 @@ function() {
 }
 
 //Denial of Service (DoS)
-(param) => {
+function arrowFunc27(param) {
       const parts = param.trim().split('=');
       const key = parts[0];
       var value = parts[1];
@@ -7869,7 +7878,7 @@ function() {
     }
 
 //Denial of Service (DoS)
-(v) => {
+function arrowFunc28(v) {
     const params = v.split(';');
     const token = params.shift().trim();
     const paramsList = extensions[token] = extensions[token] || [];
@@ -7898,7 +7907,7 @@ function() {
   }
 
 //Denial of Service (DoS)
-(value) => {
+function name442 (value) {
   value = value || '';
 
   const extensions = {};
@@ -7935,7 +7944,7 @@ function() {
 }
 
 //Cross-site Scripting (XSS)
-() {
+function name443 () {
 		// TODO: victoriafrench - is this the correct way to do this? the object
 		// should be creating a default md where one does not exist imo.
 
@@ -7947,16 +7956,16 @@ function() {
 		: '';
 
 		return (
-			<FormInput
+			`<FormInput
 				dangerouslySetInnerHTML={{ __html: innerHtml }}
 				multiline
 				noedit
-			/>
+			/>`
 		);
 	}
 
 //Open Redirect
-function (u) {
+function name3172(u) {
   var p = url.parse(u).pathname
 
   // Encoded dots are dots
@@ -7998,13 +8007,13 @@ function (u) {
 }
 
 //Credential Exposure
-(env, key) => {
+function arrowFunc29(env, key) {
       env[key] = process.env[key]
       return env
     }
 
 //Credential Exposure
-(env) => {
+function name444 (env) {
   const PREFIX = /^AEGIR_/i
   const raw = Object.keys(process.env)
     .filter((key) => PREFIX.test(key))
@@ -8029,7 +8038,7 @@ function (u) {
 }
 
 //Cross-site Scripting (XSS)
-function (embedder, options) {
+function name3173(embedder, options) {
   if (options.webPreferences == null) {
     options.webPreferences = {}
   }
@@ -8058,12 +8067,12 @@ function (embedder, options) {
 }
 
 //Denial of Service (DoS)
-function (message, title) {
+function name3174(message, title) {
     ipcRenderer.sendSync('ELECTRON_BROWSER_WINDOW_ALERT', message, title)
   }
 
 //Denial of Service (DoS)
-function (message, title) {
+function name3175(message, title) {
     return ipcRenderer.sendSync('ELECTRON_BROWSER_WINDOW_CONFIRM', message, title)
   }
 
@@ -8105,7 +8114,7 @@ function (message, title) {
   }
 
 //Regular Expression Denial of Service (ReDoS)
-function (req, res) {
+function name3176(req, res) {
     // set appropriate Vary header
     vary(res, str)
 
@@ -8127,7 +8136,7 @@ function createHeaderGetter (str) {
 }
 
 //Regular Expression Denial of Service (ReDoS)
-(path) {
+function name445 (path) {
     path = String(path);
     var last = path.replace(/.*[/\\]/, '').toLowerCase();
     var ext = last.replace(/.*\./, '').toLowerCase();
@@ -8139,7 +8148,7 @@ function createHeaderGetter (str) {
   }
 
 //Regular Expression Denial of Service (ReDoS)
-getType(path) {
+function namegetType(path) {
     path = String(path);
     var last = path.replace(/.*[/\\]/, '').toLowerCase();
     var ext = last.replace(/.*\./, '').toLowerCase();
@@ -8181,7 +8190,7 @@ function mergeBuffers(buffers) {
 }
 
 //Uninitialized Memory Exposure
-function(password, scramble) {
+function name3177(password, scramble) {
   if (!password) {
     return new Buffer(0);
   }
@@ -8194,7 +8203,7 @@ function(password, scramble) {
 }
 
 //Uninitialized Memory Exposure
-function(password) {
+function name3178(password) {
   var nr = [0x5030, 0x5735],
       add = 7,
       nr2 = [0x1234, 0x5671],
@@ -8230,7 +8239,7 @@ function(password) {
 }
 
 //Uninitialized Memory Exposure
-function(message, password) {
+function name3179(message, password) {
   var to = new Buffer(8),
       hashPass = this.hashPassword(password),
       hashMessage = this.hashPassword(message.slice(0, 8)),
@@ -8316,7 +8325,7 @@ function _allocate(bytes) {
 }
 
 //Uninitialized Memory Exposure
-function(length) {
+function name3180(length) {
   var response = new Buffer(length);
   this._buffer.copy(response, 0, this._offset, this._offset + length);
 
@@ -8373,7 +8382,7 @@ function Parser(options) {
 }
 
 //Uninitialized Memory Exposure
-function(writer) {
+function name3181(writer) {
   if (this.protocol41) {
     writer.writeUnsignedNumber(4, this.clientFlags);
     writer.writeUnsignedNumber(4, this.maxPacketSize);
@@ -8395,7 +8404,7 @@ function(writer) {
 }
 
 //Uninitialized Memory Exposure
-function() {
+function name3182() {
   var buffer = new Buffer(this.scrambleBuff1.length +
                           (typeof this.scrambleBuff2 !== 'undefined' ? this.scrambleBuff2.length : 0));
 
@@ -8408,13 +8417,13 @@ function() {
 }
 
 //Uninitialized Memory Exposure
-() {
+function name446 () {
     const api_key_base64 = new Buffer(this.options.api_key).toString('base64')
     return `Basic ${api_key_base64}`
   }
 
 //Uninitialized Memory Exposure
-auth_header () {
+function nameauth_header () {
     const api_key_base64 = new Buffer(this.options.api_key).toString('base64')
     return `Basic ${api_key_base64}`
   }
@@ -8435,7 +8444,7 @@ function verifyHMAC(parsedSignature, secret) {
   }
 
 //Uninitialized Memory Exposure
-function(data,meta){
+function name3183(data,meta){
 
     em.stats.requestedWrites++;
     // just got a write save the time between last write and this.
@@ -8457,7 +8466,7 @@ function(data,meta){
   }
 
 //Cross-site Scripting (XSS)
-function(text) {
+function name3184(text) {
     var html = '';
     if(typeof text !== undefined) {
       if(typeof text.title !== undefined && text.title) {
@@ -8471,7 +8480,7 @@ function(text) {
   }
 
 //Arbitrary Command Injection
-function(pid, options, done) {
+function name3185(pid, options, done) {
 
     var cmd = 'ps -o pcpu,rss -p '
 
@@ -8493,7 +8502,7 @@ function(pid, options, done) {
   }
 
 //Uninitialized Memory Exposure
-function(addr, mask) {
+function name447 (addr, mask) {
   addr = ip.toBuffer(addr);
   mask = ip.toBuffer(mask);
 
@@ -8528,7 +8537,7 @@ function(addr, mask) {
 }
 
 //Cross-site Scripting (XSS)
-(repo) {
+function name3186(repo) {
     const adapter = this.adapter
 
     this.$view.find('.octotree_view_header')
@@ -8549,7 +8558,7 @@ function(addr, mask) {
   }
 
 //Cross-site Scripting (XSS)
-_showHeader(repo) {
+function _showHeader(repo) {
     const adapter = this.adapter
 
     this.$view.find('.octotree_view_header')
@@ -8570,7 +8579,7 @@ _showHeader(repo) {
   }
 
 //Cross-site Scripting (XSS)
-function(item) {
+function name3187 (item) {
         var path   = item.path
           , index  = path.lastIndexOf('/')
           , name   = path.substring(index + 1)
@@ -8614,7 +8623,7 @@ function handleSource(req, res, next) {
 }
 
 //Cross-site Scripting (XSS)
-function(template, data) {
+function name3188(template, data) {
     return !template ? '' : (FN[template] = FN[template] || new Function("_",
       "return '" + template
         .replace(/\n/g, "\\n")
@@ -8626,7 +8635,7 @@ function(template, data) {
   }
 
 //Cross-site Scripting (XSS)
-function() {
+function name448 () {
 
   // Precompiled templates (JavaScript functions)
   var FN = {};
@@ -8646,7 +8655,7 @@ function() {
 }
 
 //Cross-site Scripting (XSS)
-function(value, key) {
+function name449 (value, key) {
     if (_.isString(value)) {
       parsed = _.unescape(value);
       try {
@@ -8657,7 +8666,7 @@ function(value, key) {
   }
 
 //Cross-site Scripting (XSS)
-function ($el) {
+function name450 ($el) {
   var parsed,
     options = $el.data();
 
@@ -8675,7 +8684,7 @@ function ($el) {
 }
 
 //Information Exposure
-function(opts) {
+function name451 (opts) {
   if(!opts) opts = {};
   var urlOpts;
   var self = this;
@@ -8739,10 +8748,10 @@ function displayCaptions() {
 	}
 
 //Cross-site Scripting (XSS)
-function(){if(void 0!==this.tracks){var a=this,b=a.selectedTrack,c=void 0;if(null!==b&&b.isLoaded){if(c=a.searchTrackPosition(b.entries,a.media.currentTime),c>-1)return a.captionsText.html(b.entries[c].text).attr("class",a.options.classPrefix+"captions-text "+(b.entries[c].identifier||"")),void a.captions.show().height(0);a.captions.hide()}else a.captions.hide()}}
+function name452 (){if(void 0!==this.tracks){var a=this,b=a.selectedTrack,c=void 0;if(null!==b&&b.isLoaded){if(c=a.searchTrackPosition(b.entries,a.media.currentTime),c>-1)return a.captionsText.html(b.entries[c].text).attr("class",a.options.classPrefix+"captions-text "+(b.entries[c].identifier||"")),void a.captions.show().height(0);a.captions.hide()}else a.captions.hide()}}
 
 //Cross-site Scripting (XSS)
-function displayCaptions() {
+function displayCaptions1() {
 
 		if (this.tracks === undefined) {
 			return;
@@ -8768,10 +8777,10 @@ function displayCaptions() {
 	}
 
 //Cross-site Scripting (XSS)
-function(){if(void 0!==this.tracks){var a=this,b=a.selectedTrack,c=void 0;if(null!==b&&b.isLoaded){if(c=a.searchTrackPosition(b.entries,a.media.currentTime),c>-1)return a.captionsText.html(b.entries[c].text).attr("class",a.options.classPrefix+"captions-text "+(b.entries[c].identifier||"")),void a.captions.show().height(0);a.captions.hide()}else a.captions.hide()}}
+function name453 (){if(void 0!==this.tracks){var a=this,b=a.selectedTrack,c=void 0;if(null!==b&&b.isLoaded){if(c=a.searchTrackPosition(b.entries,a.media.currentTime),c>-1)return a.captionsText.html(b.entries[c].text).attr("class",a.options.classPrefix+"captions-text "+(b.entries[c].identifier||"")),void a.captions.show().height(0);a.captions.hide()}else a.captions.hide()}}
 
 //Cross-site Scripting (XSS)
-function ()  {
+function name3189()  {
 
 		if (this.tracks === undefined) {
 			return;
@@ -8816,7 +8825,7 @@ function drawVideo(video) {
 		}
 
 //Cross-site Request Forgery (CSRF)
-function () {
+function name3190() {
     if (!data) {
       con.end();
       return;
@@ -8846,7 +8855,7 @@ function () {
   }
 
 //Cross-site Request Forgery (CSRF)
-function (con) {
+function name3191(con) {
   var data = '';
   con.on('data', function (chunk) {
     data += chunk;
@@ -8882,7 +8891,7 @@ function (con) {
 }
 
 //Directory Traversal
-function(api, connection, next){
+function name3192(api, connection, next){
 		var fileName = "";
 		if((connection.params.fileName == null || typeof connection.params.fileName == "undefined") && connection.req != null){
 			var parsedURL = api.url.parse(connection.req.url);
@@ -8938,7 +8947,7 @@ function requestListener(req, res) {
 }
 
 //Arbitrary Code Injection
-function(colorTheme) {
+function name3193(colorTheme) {
       for(var i in colorTheme){
         // console.log('i', i);
         var theme = "";
@@ -8965,7 +8974,7 @@ function getSizeFromRatio(options) {
 }
 
 //Directory Traversal
-function(req,res){
+function name3194(req,res){
 		console.log('Serving: %s',req.url);
 		var rs = fs.createReadStream(__dirname+req.url,{
 			flags: 'r',
@@ -8980,7 +8989,7 @@ function(req,res){
 	}
 
 //Insecure Defaults
-function(currentNode) {
+function name3195(currentNode) {
             var regex = /^(\w+script|data):/gi,
                 clonedNode = currentNode.cloneNode();
 
@@ -9001,7 +9010,7 @@ function(currentNode) {
         }
 
 //Denial of Service (DoS)
-(ignoreErr, state, failed) => {
+function arrowFunc30(ignoreErr, state, failed) {
 
         const auth = state[config.cookie];
         if (auth) {
@@ -9010,7 +9019,7 @@ function(currentNode) {
     }
 
 //Denial of Service (DoS)
-function () {
+function name3196() {
 
     const config = this._listener._settings.auth;
     if (!config) {
@@ -9045,7 +9054,7 @@ function tag(tagName, attrsMap, content) {
 }
 
 //Cross-site Scripting (XSS)
-function(text) {
+function name3197(text) {
       if (skipText) {
         return;
       }
@@ -9075,7 +9084,7 @@ function(text) {
     }
 
 //Denial of Service (DoS)
-function (response) {
+function name3198(response) {
 
     const request = response.request;
     if (!request.connection.settings.compression) {
@@ -9108,7 +9117,7 @@ function runNpmCommand(command, callback) {
 	}
 
 //Cross-site Scripting (XSS)
-function(results, next) {
+function name3199(results, next) {
 				postData.user = results.userInfo[0];
 				postData.topic = results.topicInfo;
 
@@ -9141,7 +9150,7 @@ function(results, next) {
 			}
 
 //Insecure Defaults
-function(port, sslOptions, callback, context) {
+function name3200(port, sslOptions, callback, context) {
     var ssl = sslOptions && sslOptions.cert
             ? { key:  fs.readFileSync(sslOptions.key),
                 cert: fs.readFileSync(sslOptions.cert)
@@ -9163,7 +9172,7 @@ function(port, sslOptions, callback, context) {
   }
 
 //Open Redirect
-function(user) {
+function name3201(user) {
 			
 			if (req.query.from) {
 				res.redirect(req.query.from);
@@ -9178,7 +9187,7 @@ function(user) {
 		}
 
 //Elliptic Curve Key Disclosure
-function(key, props) {
+function name3202(key, props) {
     props = props || {};
     var keyLen = props.length || 0;
     // assume {key} is privateKey
@@ -9217,7 +9226,7 @@ function _wrapMatchesInNode(textNode) {
   }
 
 //Cross-site Scripting (XSS)
-function(html) {
+function name3203(html) {
     // Strip the script tags from the html and inline evenhandlers
     html = html.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '');
     html = html.replace(/(on\w+="[^"]*")*(on\w+='[^']*')*(on\w+=\w*\(\w*\))*/gi, '');
@@ -9226,7 +9235,7 @@ function(html) {
 }
 
 //Cross-site Scripting (XSS)
-function () {
+function name3204() {
     $(this.el).html(Handlebars.templates.main(this.model));
     this.info = this.$('.info')[0];
 
@@ -9261,7 +9270,7 @@ function () {
   }
 
 //Cross-site Scripting (XSS)
-function (container, $image) {
+function name3205(container, $image) {
       var caption = $image.attr('data-caption');
 
       if (caption) {
@@ -9277,7 +9286,7 @@ function (container, $image) {
     }
 
 //Cross-site Scripting (XSS)
-function(e,t){var n,r,o,i,a,s=this.getSelection(),d=this._doc.createDocumentFragment(),l=this.createElement("DIV");t&&(n=e.indexOf("<!--StartFragment-->"),r=e.lastIndexOf("<!--EndFragment-->"),n>-1&&r>-1&&(e=e.slice(n+20,r))),l.innerHTML=e,d.appendChild(N(l)),this.saveUndoState(s);try{for(o=this._root,i=d,a={fragment:d,preventDefault:function(){this.defaultPrevented=!0},defaultPrevented:!1},gn(d,d,this),Ht(d),Kt(d,null),Wt(d),d.normalize();i=c(i,d);)_(i,null);t&&this.fireEvent("willPaste",a),a.defaultPrevented||(mt(s,a.fragment,o),it||this._docWasChanged(),s.collapse(!1),this._ensureBottomLine()),this.setSelection(s),this._updatePath(s,!0)}catch(h){this.didError(h)}return this}
+function name3206(e,t){var n,r,o,i,a,s=this.getSelection(),d=this._doc.createDocumentFragment(),l=this.createElement("DIV");t&&(n=e.indexOf("<!--StartFragment-->"),r=e.lastIndexOf("<!--EndFragment-->"),n>-1&&r>-1&&(e=e.slice(n+20,r))),l.innerHTML=e,d.appendChild(N(l)),this.saveUndoState(s);try{for(o=this._root,i=d,a={fragment:d,preventDefault:function(){this.defaultPrevented=!0},defaultPrevented:!1},gn(d,d,this),Ht(d),Kt(d,null),Wt(d),d.normalize();i=c(i,d);)_(i,null);t&&this.fireEvent("willPaste",a),a.defaultPrevented||(mt(s,a.fragment,o),it||this._docWasChanged(),s.collapse(!1),this._ensureBottomLine()),this.setSelection(s),this._updatePath(s,!0)}catch(h){this.didError(h)}return this}
 
 //Uninitialized Memory Exposure
 function stringConcat (parts) {
@@ -9332,7 +9341,7 @@ function validateLink(url) {
 }
 
 //Cross-site Scripting (XSS)
-function (err, authorized, newData) {
+function name3207(err, authorized, newData) {
     if (err) return error(err);
 
     if (authorized) {
@@ -9387,7 +9396,7 @@ function JSONPPolling (mng, data, req) {
 }
 
 //Cross-site Scripting (XSS)
-function(value){
+function name3208(value){
 				// all the code here takes the information from the above keyup function or any other time that the viewValue is updated and parses it for storage in the ngModel
 				if(ngModel.$oldViewValue === undefined) ngModel.$oldViewValue = value;
 				try{
@@ -9428,7 +9437,7 @@ function limit(req, res, next){
   }
 
 //Denial of Service (DoS)
-function limit(bytes){
+function limit1(bytes){
   if ('string' == typeof bytes) bytes = parse(bytes);
   if ('number' != typeof bytes) throw new Error('limit() bytes required');
   return function limit(req, res, next){
@@ -9460,7 +9469,7 @@ function limit(bytes){
 }
 
 //Cross-site Scripting (XSS)
-function (tokens, idx, options, env, self) {
+function name3209(tokens, idx, options, env, self) {
   var token = tokens[idx],
       langName = '',
       highlighted;
@@ -9482,13 +9491,13 @@ function (tokens, idx, options, env, self) {
 }
 
 //Cross-site Scripting (XSS)
-function (stringId, subs) {
+function name3210(stringId, subs) {
         var message = this.get('strings.' + stringId);
         this._ariaNode.setContent(subs ? Lang.sub(message, subs) : message);
     }
 
 //Cross-site Scripting (XSS)
-function(key, value) {
+function name3211(key, value) {
         var nextKey = nestedKey ? nestedKey + o.keyseparator + key : key;
         if (typeof value === 'object' && value !== null) {
             str = applyReplacement(str, value, nextKey, options);
@@ -9504,7 +9513,7 @@ function(key, value) {
     }
 
 //Cross-site Scripting (XSS)
-function(href, title, text) {
+function name3212(href, title, text) {
   if (this.options.sanitize) {
     try {
       var prot = decodeURIComponent(unescape(href))
@@ -9526,7 +9535,7 @@ function(href, title, text) {
 }
 
 //Denial of Service (DoS)
-function(body, status) {
+function name454 (body, status) {
 			// (session is saved automatically when responding)
 			req.session.save(function (err) {
 				socketIOCallback(body);
@@ -9534,7 +9543,7 @@ function(body, status) {
 		}
 
 //Cross-site Scripting (XSS)
-function(scope, locals, assign, inputs) {
+function name455 (scope, locals, assign, inputs) {
       var lhs = left(scope, locals, assign, inputs);
       var rhs;
       var value;
@@ -9556,7 +9565,7 @@ function(scope, locals, assign, inputs) {
     }
 
 //Cross-site Scripting (XSS)
-function(left, right, context, create, expression) {
+function name3213(left, right, context, create, expression) {
     return function(scope, locals, assign, inputs) {
       var lhs = left(scope, locals, assign, inputs);
       var rhs;
@@ -9580,7 +9589,7 @@ function(left, right, context, create, expression) {
   }
 
 //Unsafe Object Deserialization
-function(scope, locals) {
+function name3214(scope, locals) {
       var args = [];
       var context = contextGetter ? contextGetter(scope, locals) : scope;
 
@@ -9601,7 +9610,7 @@ function(scope, locals) {
     }
 
 //Unsafe Object Deserialization
-function(fn, contextGetter) {
+function name3215(fn, contextGetter) {
     var argsFn = [];
     if (this.peekToken().text !== ')') {
       do {
@@ -9622,7 +9631,7 @@ function(fn, contextGetter) {
       var fnPtr = fn(scope, locals, context) || noop;
 
       ensureSafeObject(context, parser.text);
-      ensureSafeFunction(fnPtr, parser.text);
+      ensureSafefunction(fnPtr, parser.text);
 
       // IE stupidity! (IE doesn't have apply for some native functions)
       var v = fnPtr.apply
@@ -9668,7 +9677,7 @@ function setter(obj, path, setValue, fullExp, options) {
 }
 
 //Arbitrary Script Injection
-function(self, locals){
+function name3216(self, locals){
         var o = obj(self, locals),
             i = indexFn(self, locals),
             v, p;
@@ -9687,7 +9696,7 @@ function(self, locals){
       }
 
 //Arbitrary Script Injection
-function setter(obj, path, setValue) {
+function setter1(obj, path, setValue) {
   var element = path.split('.');
   for (var i = 0; element.length > 1; i++) {
     var key = element.shift();
@@ -9703,7 +9712,7 @@ function setter(obj, path, setValue) {
 }
 
 //Cross-site Scripting (XSS)
-function(rootID, transaction, mountDepth) {
+function name3217(rootID, transaction, mountDepth) {
     ReactComponent.Mixin.mountComponent.call(
       this,
       rootID,
@@ -9749,7 +9758,7 @@ function _startTLS(onSecure) {
   }
 
 //Unauthorized SSL Connection due to lack of cert authentication
-function _startTLS(onSecure) {
+function _startTLS1(onSecure) {
     // before TLS:
     //  _socket <-> _protocol
     // after:
@@ -9784,7 +9793,7 @@ function _startTLS(onSecure) {
   }
 
 //SQL Injection
-function (err) {
+function name3218(err) {
               if (!err) {
                 connection.query('USE `' + db + '`', function (err) {
                   runQuery(connection);
@@ -9795,7 +9804,7 @@ function (err) {
             }
 
 //SQL Injection
-function (err) {
+function name3219(err) {
         if (err) {
           if (err && err.message.match(/(^|: )unknown database/i)) {
             var charset = self.settings.charset;
@@ -9820,7 +9829,7 @@ function (err) {
       }
 
 //SQL Injection
-function (f) {
+function name3220(f) {
       var notFound = !~propNames.indexOf(f.Field);
       if (m.properties[f.Field] && self.id(model, f.Field)) return;
       if (notFound || !m.properties[f.Field]) {
@@ -9829,7 +9838,7 @@ function (f) {
     }
 
 //SQL Injection
-function (propName) {
+function name3221(propName) {
     if (m.properties[propName] && self.id(model, propName)) return;
     var found;
     if (actualFields) {
@@ -9848,7 +9857,7 @@ function (propName) {
   }
 
 //SQL Injection
-function (indexName) {
+function name3222(indexName) {
     if (indexName === 'PRIMARY' || (m.properties[indexName] && self.id(model, indexName))) return;
     if (indexNames.indexOf(indexName) === -1 && !m.properties[indexName] || m.properties[indexName] && !m.properties[indexName].index) {
       sql.push('DROP INDEX `' + indexName + '`');
@@ -9873,7 +9882,7 @@ function (indexName) {
   }
 
 //SQL Injection
-function (propName) {
+function name3223(propName) {
     var i = m.properties[propName].index;
     if (!i) {
       return;
@@ -9898,7 +9907,7 @@ function (propName) {
   }
 
 //SQL Injection
-function (indexName) {
+function name3224(indexName) {
     var i = m.settings.indexes[indexName];
     var found = ai[indexName] && ai[indexName].info;
     if (!found) {
@@ -9928,7 +9937,7 @@ function actualize(propName, oldSettings) {
   }
 
 //SQL Injection
-function (name) {
+function name3225(name) {
   return '`' + name.replace(/\./g, '`.`') + '`';
 }
 
@@ -9964,18 +9973,17 @@ async error => {
   } catch (error) {
     log.error(error.stack);
 
-    // eslint-disable-next-line unicorn/no-process-exit
     process.exit(1);
   }
 }
 
 //Cross-site Scripting (XSS)
-function() {
+function name3226() {
 			return $( this ).attr( "title" );
 		}
 
 //Cross-site Scripting (XSS)
-function( selector, context, rootjQuery ) {
+function name3227( selector, context, rootjQuery ) {
 	var match;
 
 	if ( selector && typeof selector === "string" && !jQuery.isPlainObject( context ) &&
@@ -10001,3 +10009,4 @@ function( selector, context, rootjQuery ) {
 	return oldInit.apply( this, arguments );
 }
 
+name();
